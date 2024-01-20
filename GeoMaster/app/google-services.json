@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "855542707798",
+    "project_id": "geo-master-backend",
+    "storage_bucket": "geo-master-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855542707798:android:fee49c3c6d97c1621badf7",
+        "android_client_info": {
+          "package_name": "com.example.tyomo_prodaqshn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6v62DOu3v2DIuI11uHtud56jcozgwk7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
