@@ -24,7 +24,7 @@ public class Activity3 extends AppCompatActivity {
        pastxan_inpat.setOnClickListener(v -> {
            if(patasxaner.patasxan[0].equals(pastxan_inpat.getText().toString())){
                Toast.makeText(this, "Ответ правилен!", Toast.LENGTH_SHORT).show();
-               Intent intent = new Intent(Activity3.this,start_patuhan.class);
+               Intent intent = new Intent(Activity3.this,qarankyun_1.class);
                startActivity(intent);
            }else{
                Toast.makeText(this, "Ответ неправилен!", Toast.LENGTH_SHORT).show();

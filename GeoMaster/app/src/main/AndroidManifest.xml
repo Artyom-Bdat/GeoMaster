@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Tyomo_Prodaqshn"
         tools:targetApi="31">
         <activity
+            android:name=".qarankyun_nerqnadzigq"
+            android:exported="false" />
+        <activity
+            android:name=".qarankyun_Makeres"
+            android:exported="false" />
+        <activity
             android:name=".qarankyan_paragit"
             android:exported="false" />
         <activity

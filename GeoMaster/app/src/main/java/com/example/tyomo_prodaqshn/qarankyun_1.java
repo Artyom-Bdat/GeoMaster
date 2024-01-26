@@ -13,6 +13,11 @@ public class qarankyun_1 extends AppCompatActivity {
     Button satrt_patuhan_button;
     ImageButton qarakusu_paragit;
 
+    ImageButton qarakusu_makeres_2;
+    ImageButton qarakusu_nerqnadziq;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +32,20 @@ public class qarankyun_1 extends AppCompatActivity {
 
         qarakusu_paragit.setOnClickListener(v -> {
             Intent intent = new Intent(qarankyun_1.this, Activity3.class);
+            startActivity(intent);
+
+        });
+        qarakusu_makeres_2= findViewById(R.id.qarakusu_makeres_2);
+        qarakusu_makeres_2.setOnClickListener(v -> {
+            Intent intent = new Intent(qarankyun_1.this, qarankyun_Makeres
+
+                    .class);
+            startActivity(intent);
+
+        });
+        qarakusu_nerqnadziq= findViewById(R.id.qarakusu_nerqnadzigq);
+        qarakusu_nerqnadziq.setOnClickListener(v -> {
+            Intent intent = new Intent(qarankyun_1.this, qarankyun_nerqnadzigq.class);
             startActivity(intent);
 
         });

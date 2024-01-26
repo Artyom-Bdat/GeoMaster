@@ -44,6 +44,7 @@
                 app:srcCompat="@drawable/paragit_qarakusi" />
 
             <ImageButton
+                android:id="@+id/qarakusu_makeres_2"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
@@ -51,6 +52,7 @@
                 app:srcCompat="@drawable/makeres_qarakusi" />
 
             <ImageButton
+                android:id="@+id/qarakusu_nerqnadzigq"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
