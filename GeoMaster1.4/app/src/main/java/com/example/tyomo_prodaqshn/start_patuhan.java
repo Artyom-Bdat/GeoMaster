@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 public class start_patuhan extends AppCompatActivity {
     Button home;
     ImageButton qvadrat;
+    ImageButton klor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,13 @@ public class start_patuhan extends AppCompatActivity {
         qvadrat = findViewById(R.id.qvadrat_qvadrat);
         qvadrat.setOnClickListener(v -> {
             Intent intent = new Intent(start_patuhan.this, qarankyun_1.class);
+            startActivity(intent);
+
+        });
+
+        klor = findViewById(R.id.klor);
+        klor.setOnClickListener(v -> {
+            Intent intent = new Intent(start_patuhan.this, klor_diametr_radius.class);
             startActivity(intent);
 
         });

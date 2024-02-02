@@ -44,12 +44,12 @@
                 app:srcCompat="@drawable/qarakusi_button" />
 
             <ImageButton
-                android:id="@+id/erankyun"
+                android:id="@+id/klor"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/backgraunds"
-                app:srcCompat="@drawable/triangle_button" />
+                app:srcCompat="@drawable/klor_1" />
 
             <ImageButton
                 android:layout_width="70dp"
