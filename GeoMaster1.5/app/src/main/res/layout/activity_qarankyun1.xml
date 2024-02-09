@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgraunds"
+    tools:context=".start_patuhan">
+
+    <Button
+        android:id="@+id/satrt_patuhan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/black"
+        android:text="назад"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/qarakusu_paragit"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/backgraunds"
+                app:srcCompat="@drawable/paragit_qarakusi" />
+
+            <ImageButton
+                android:id="@+id/qarakusu_makeres_2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/backgraunds"
+                app:srcCompat="@drawable/makeres_qarakusi" />
+
+
+            <ImageButton
+                android:id="@+id/qarakusu_nerqnadzig"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/backgraunds"
+                app:srcCompat="@drawable/qarakusu_nerqnadzig" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
