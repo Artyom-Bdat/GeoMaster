@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Tyomo_Prodaqshn"
         tools:targetApi="31">
         <activity
+            android:name=".erankyun_makeres_act"
+            android:exported="false" />
+        <activity
+            android:name=".nastroyki"
+            android:exported="false" />
+        <activity
+            android:name=".erankyun_paragit_act"
+            android:exported="false" />
+        <activity
+            android:name=".erankyun_start_patuhan"
+            android:exported="false" />
+        <activity
+            android:name=".shrjanagci_erkarutyun"
+            android:exported="false" />
+        <activity
             android:name=".shrjan_makeres_act"
             android:exported="false" />
         <activity

@@ -7,16 +7,14 @@
     android:background="@color/backgraunds"
     tools:context=".start_patuhan">
 
-
-
     <Button
-        android:id="@+id/home"
+        android:id="@+id/satrt_patuhan_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/black"
-        android:text="Дoмой"
+        android:text="назад"
         android:textColor="@color/white"
         android:textSize="20dp" />
 
@@ -27,25 +25,32 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/qvadrat_qvadrat"
+                android:id="@+id/erankyun_paragit"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/backgraunds"
-                app:srcCompat="@drawable/qarakusi_button" />
+                app:srcCompat="@drawable/eranyun_paragit" />
 
             <ImageButton
-                android:id="@+id/klor"
+                android:id="@+id/erankyun_makeres"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/backgraunds"
-                app:srcCompat="@drawable/klor_1" />
+                app:srcCompat="@drawable/erankyun_makeres" />
+
+
+
+
+
+
+
 
         </LinearLayout>
     </LinearLayout>

@@ -36,5 +36,13 @@ public class klor_diametr_radius extends AppCompatActivity {
             Intent intent = new Intent(klor_diametr_radius.this, shrjan_makeres_act.class);
             startActivity(intent);
         });
+
+        ImageButton Klor_erkarutyun;
+        Klor_erkarutyun = findViewById(R.id.klor_erkarutyun);
+        Klor_erkarutyun.setOnClickListener(v -> {
+            Intent intent = new Intent(klor_diametr_radius.this, shrjanagci_erkarutyun.class);
+            startActivity(intent);
+        });
+
     }
 }

@@ -13,6 +13,7 @@ public class start_patuhan extends AppCompatActivity {
     Button home;
     ImageButton qvadrat;
     ImageButton klor;
+    ImageButton erankyun;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,13 @@ public class start_patuhan extends AppCompatActivity {
         klor = findViewById(R.id.klor);
         klor.setOnClickListener(v -> {
             Intent intent = new Intent(start_patuhan.this, klor_diametr_radius.class);
+            startActivity(intent);
+
+        });
+
+        erankyun = findViewById(R.id.erankyun);
+        erankyun.setOnClickListener(v -> {
+            Intent intent = new Intent(start_patuhan.this, erankyun_start_patuhan.class);
             startActivity(intent);
 
         });
