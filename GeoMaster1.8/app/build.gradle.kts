@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.airbnb.android:lottie:4.2.2")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -59,5 +59,6 @@ dependencies {
 
         // FirebaseUI for Cloud Storage
         implementation("com.firebaseui:firebase-ui-storage:8.0.2")
+
     }
 }

@@ -5,79 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fon_glxavor"
-    tools:context=".start_patuhan">
-
+    tools:context=".sexan_start_patuhan">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="308dp"
-        android:layout_height="127dp"
-        android:text="@string/start_patuhan"
-        android:textSize="37dp"
+        android:layout_width="316dp"
+        android:layout_height="129dp"
+        android:text="@string/start_patuhan_standart"
+        android:textSize="38dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.621"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintVertical_bias="0.149" />
+
+
+    <ImageButton
+        android:id="@+id/sexan_paragit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/backgraunds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
+        app:srcCompat="@drawable/sexan_paragit" />
+
+    <ImageButton
+        android:id="@+id/sexan_makeres"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/backgraunds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
+        app:srcCompat="@drawable/sexan_makeres" />
 
     <Button
-        android:id="@+id/home"
+        android:id="@+id/satrt_patuhan_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/N1"
-        android:text="Дoмой"
+        android:text="назад"
         android:textColor="@color/backgraunds"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
-
-
-    <ImageButton
-        android:id="@+id/qvadrat_qvadrat"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:backgroundTint="@color/backgraunds"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376"
-        app:srcCompat="@drawable/qarakusi_button" />
-
-    <ImageButton
-        android:id="@+id/klor"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:backgroundTint="@color/backgraunds"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376"
-        app:srcCompat="@drawable/klor_1" />
-
-    <ImageButton
-        android:id="@+id/erankyun"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:backgroundTint="@color/backgraunds"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.692"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376"
-        app:srcCompat="@drawable/erankyun" />
-
+        app:layout_constraintVertical_bias="0.918" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,10 +15,35 @@
         android:theme="@style/Theme.Tyomo_Prodaqshn"
         tools:targetApi="31">
         <activity
-            android:name=".erankyun_makeres_act"
+            android:name=".zugaheranist_makeres_act"
             android:exported="false" />
         <activity
-            android:name=".nastroyki"
+            android:name=".speshal_sccren"
+            android:exported="true"
+            android:theme="@style/Base.Theme.Tyomo_Prodaqshn1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".zugaheranist_paragit_act"
+            android:exported="false" />
+        <activity
+            android:name=".zugaheranist_start_patuhan"
+            android:exported="false" />
+        <activity
+            android:name=".sexan_makeres"
+            android:exported="false" />
+        <activity
+            android:name=".sexan_paragit_act"
+            android:exported="false" />
+        <activity
+            android:name=".sexan_start_patuhan"
+            android:exported="false" />
+        <activity
+            android:name=".erankyun_makeres_act"
             android:exported="false" />
         <activity
             android:name=".erankyun_paragit_act"
@@ -53,13 +80,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

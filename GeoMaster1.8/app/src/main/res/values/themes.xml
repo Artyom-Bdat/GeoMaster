@@ -9,4 +9,14 @@
 
     <style name="Theme.Tyomo_Prodaqshn" parent="Base.Theme.Tyomo_Prodaqshn" />
 
+
+    <style name="Base.Theme.Tyomo_Prodaqshn1" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/N1</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->m>
+    </style>
+
+
+
+
 </resources>

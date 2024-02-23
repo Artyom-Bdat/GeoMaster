@@ -14,6 +14,9 @@ public class start_patuhan extends AppCompatActivity {
     ImageButton qvadrat;
     ImageButton klor;
     ImageButton erankyun;
+    ImageButton sexan;
+    ImageButton zugaheranist;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,20 @@ public class start_patuhan extends AppCompatActivity {
         erankyun = findViewById(R.id.erankyun);
         erankyun.setOnClickListener(v -> {
             Intent intent = new Intent(start_patuhan.this, erankyun_start_patuhan.class);
+            startActivity(intent);
+
+        });
+
+        sexan = findViewById(R.id.sexan);
+        sexan.setOnClickListener(v -> {
+            Intent intent = new Intent(start_patuhan.this, sexan_start_patuhan.class);
+            startActivity(intent);
+
+        });
+
+        zugaheranist = findViewById(R.id.zugaheranist);
+        zugaheranist.setOnClickListener(v -> {
+            Intent intent = new Intent(start_patuhan.this, zugaheranist_start_patuhan.class);
             startActivity(intent);
 
         });
