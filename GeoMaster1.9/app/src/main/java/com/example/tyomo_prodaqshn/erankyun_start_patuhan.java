@@ -11,6 +11,9 @@ public class erankyun_start_patuhan extends AppCompatActivity {
     Button satrt_patuhan_button;
     ImageButton erankyun_paragit;
     ImageButton erankyun_makeres;
+    ImageButton erankyun_gradus;
+    ImageButton erankyun_sinus;
+    ImageButton erankyun_cos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,24 @@ public class erankyun_start_patuhan extends AppCompatActivity {
         erankyun_makeres= findViewById(R.id.erankyun_makeres);
         erankyun_makeres.setOnClickListener(v -> {
             Intent intent = new Intent(erankyun_start_patuhan.this, erankyun_makeres_act.class);
+            startActivity(intent);
+        });
+
+        erankyun_gradus= findViewById(R.id.erankyun_gradus);
+        erankyun_gradus.setOnClickListener(v -> {
+            Intent intent = new Intent(erankyun_start_patuhan.this, erankyun_gradus_gumar.class);
+            startActivity(intent);
+        });
+
+        erankyun_sinus= findViewById(R.id.erankyun_sinus);
+        erankyun_sinus.setOnClickListener(v -> {
+            Intent intent = new Intent(erankyun_start_patuhan.this, erankyun_sinus.class);
+            startActivity(intent);
+        });
+
+        erankyun_cos= findViewById(R.id.erankyun_cos);
+        erankyun_cos.setOnClickListener(v -> {
+            Intent intent = new Intent(erankyun_start_patuhan.this, erankyun_cos.class);
             startActivity(intent);
         });
 

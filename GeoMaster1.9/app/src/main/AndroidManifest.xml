@@ -15,6 +15,21 @@
         android:theme="@style/Theme.Tyomo_Prodaqshn"
         tools:targetApi="31">
         <activity
+            android:name=".klor_sigment"
+            android:exported="false" />
+        <activity
+            android:name=".klor_sektor"
+            android:exported="false" />
+        <activity
+            android:name=".erankyun_cos"
+            android:exported="false" />
+        <activity
+            android:name=".erankyun_sinus"
+            android:exported="false" />
+        <activity
+            android:name=".erankyun_gradus_gumar"
+            android:exported="false" />
+        <activity
             android:name=".zugaheranist_makeres_act"
             android:exported="false" />
         <activity
@@ -80,7 +95,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

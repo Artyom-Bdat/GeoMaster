@@ -25,6 +25,7 @@
         android:layout_height="75dp"
         android:backgroundTint="@color/N1"
         android:text="Старт"
+        android:onClick="Click"
         android:textColor="@color/backgraunds"
         android:textSize="27dp"
         app:layout_constraintBottom_toBottomOf="parent"

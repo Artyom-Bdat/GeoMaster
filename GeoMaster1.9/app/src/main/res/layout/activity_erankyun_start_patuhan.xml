@@ -14,12 +14,13 @@
         android:text="@string/start_patuhan_standart"
         android:textSize="38dp"
         android:textStyle="bold"
+        android:textColor="@color/N1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.126" />
 
     <Button
         android:id="@+id/satrt_patuhan_button"
@@ -35,46 +36,72 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
-
+        app:layout_constraintVertical_bias="0.951" />
 
     <ImageButton
-        android:id="@+id/klor_radiust"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:id="@+id/erankyun_paragit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:backgroundTint="@color/backgraunds"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321"
-        app:srcCompat="@drawable/klor_radius" />
+        app:layout_constraintVertical_bias="0.329"
+        app:srcCompat="@drawable/eranyun_paragit" />
 
     <ImageButton
-        android:id="@+id/klor_maakeres"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:id="@+id/erankyun_makeres"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:backgroundTint="@color/backgraunds"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321"
-        app:srcCompat="@drawable/shrjan_maakeres_logo" />
+        app:layout_constraintVertical_bias="0.329"
+        app:srcCompat="@drawable/erankyun_makeres" />
 
     <ImageButton
-        android:id="@+id/klor_erkarutyun"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:id="@+id/erankyun_gradus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:backgroundTint="@color/backgraunds"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321"
-        app:srcCompat="@drawable/sh_erkarutyun" />
+        app:layout_constraintVertical_bias="0.329"
+        app:srcCompat="@drawable/erankyun_gradus" />
+
+    <ImageButton
+        android:id="@+id/erankyun_sinus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/backgraunds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@drawable/erankyun_sinus" />
+
+    <ImageButton
+        android:id="@+id/erankyun_cos"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/backgraunds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@drawable/erankyun_cos" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

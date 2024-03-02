@@ -44,5 +44,19 @@ public class klor_diametr_radius extends AppCompatActivity {
             startActivity(intent);
         });
 
+        ImageButton Klor_sektor;
+        Klor_sektor = findViewById(R.id.klor_sektor);
+        Klor_sektor.setOnClickListener(v -> {
+            Intent intent = new Intent(klor_diametr_radius.this, klor_sektor.class);
+            startActivity(intent);
+        });
+
+        ImageButton Klor_sigment;
+        Klor_sigment = findViewById(R.id.klor_sigment);
+        Klor_sigment.setOnClickListener(v -> {
+            Intent intent = new Intent(klor_diametr_radius.this, klor_sigment.class);
+            startActivity(intent);
+        });
+
     }
 }
