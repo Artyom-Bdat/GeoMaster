@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tyomo_Prodaqshn" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/blue</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->m>
+    </style>
+
+
+    <style name="Theme.Tyomo_Prodaqshn" parent="Base.Theme.Tyomo_Prodaqshn" />
+
+
+    <style name="Base.Theme.Tyomo_Prodaqshn1" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/blue</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->m>
+    </style>
+
+    <style name="Theme.Tyomo_Prodaqshn.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Tyomo_Prodaqshn.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Tyomo_Prodaqshn.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

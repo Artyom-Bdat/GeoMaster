@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tyomo_Prodaqshn"
+        tools:targetApi="31">
+        <activity
+            android:name=".Leval_6"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leval_5"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leval_4"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leval_3"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leval_2"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leval_1"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".start_patuhan_2"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".strat_vibor"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sing_in"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.NoActionBar" />
+        <activity
+            android:name=".info"
+            android:exported="false"
+            android:label="@string/title_activity_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.NoActionBar" />
+        <activity
+            android:name=".klor_sigment"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".klor_sektor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".erankyun_cos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".erankyun_sinus"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".erankyun_gradus_gumar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".zugaheranist_makeres_act"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".speshal_sccren"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.Tyomo_Prodaqshn1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".zugaheranist_paragit_act"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".zugaheranist_start_patuhan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sexan_makeres"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sexan_paragit_act"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sexan_start_patuhan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".erankyun_makeres_act"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".erankyun_paragit_act"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".erankyun_start_patuhan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shrjanagci_erkarutyun"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".shrjan_makeres_act"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".diametr_radius_act"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".klor_diametr_radius"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qarankyun_nerqnadzigq"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qarankyun_Makeres"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qarankyun_1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity3"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".start_patuhan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

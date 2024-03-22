@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".qarankyun_nerqnadzigq">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="670dp"
+        android:backgroundTint="#BCF3FA"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491">
+
+
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="179dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/qarakusu_nerqnadziq_1"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            />
+
+
+        <TextView
+            android:layout_width="325dp"
+            android:layout_height="179dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="220dp"
+            android:text="@string/qarakusu_nerqnadziq_2"
+            android:textColor="@color/red"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.416" />
+
+        <TextView
+            android:layout_width="171dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="260dp"
+            android:text="@string/qarakusu_nerqnadziq_3"
+            android:textColor="@color/red"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.245"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.421" />
+
+        <TextView
+            android:layout_width="333dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="350dp"
+            android:text="@string/qarakusu_nerqnadziq_4"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.622" />
+
+        <TextView
+            android:layout_width="31dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="35dp"
+            android:text="@string/armat"
+            android:layout_marginTop="525dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/patasxan_dioganal"
+            app:layout_constraintHorizontal_bias="1.0"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.894" />
+
+        <EditText
+            android:id="@+id/patasxan_dioganal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_rounder_corner"
+            android:backgroundTint="@color/blue"
+            android:inputType="number"
+            android:layout_marginTop="525dp"
+            android:layout_marginLeft="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.898" />
+
+        <ImageView
+            android:id="@+id/microfon"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:onClick="Click"
+            android:layout_marginTop="525dp"
+            android:layout_marginLeft="260dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/patasxan_dioganal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.893"
+            app:srcCompat="@drawable/miqrafon_off" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="142dp"
+            android:layout_height="127dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="210dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.855"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.336"
+            app:srcCompat="@drawable/qarakusi_nerqnadziq_abc" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
