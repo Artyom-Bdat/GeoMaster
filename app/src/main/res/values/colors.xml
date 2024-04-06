@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#000000</color>
+    <color name="black1">#000000</color>
     <color name="backgraunds">#ede0d4</color>
-    <color name="white">#FFFFFF</color>
+    <color name="white1">#FFFFFF</color>
     <color name="blue">#00B4FE</color>
     <color name="my_primary">#00B4FE</color>
     <color name="my_secondary">#9AEFEC</color>
     <color name="red">#FF0000</color>
     <color name="N1">#B08968</color>
     <color name="N2">#ede0d4</color>
+
+
+
+
+
+
+
+    <color name="brown">#675645</color>
+    <color name="green">#597E52</color>
+    <color name="black">#1c222e</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="chocolate">#3F2305</color>
+    <color name="teal_200">#41533b</color>
+    <color name="teal_700">#604439</color>
 </resources>

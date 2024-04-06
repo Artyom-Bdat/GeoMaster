@@ -21,6 +21,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
 
@@ -117,22 +119,24 @@ public class sign_up extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
 
-
+                                FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
                                 if (task.isSuccessful()) {
+                                    userModel.setBal(0);
+                                    userModel.setEmil(email);
+                                    userModel.setPassword(password);
+                                    userModel.setName(name);
 
-                                        userModel.setBal(0);
-                                        userModel.setEmil(email);
-                                        userModel.setPassword(password);
-                                        userModel.setName(name);
                                         FirebaseFirestore.getInstance().collection("users").document(mAuth.getCurrentUser().getUid()).set(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
 
                                                 if (task.isSuccessful()) {
 
-                                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                                                    startActivity(intent);
+                                                    firebaseAuth.getCurrentUser().sendEmailVerification();
+                                                    firebaseAuth.signOut();
+                                                    startActivity(new Intent(sign_up.this, sing_in.class));
                                                     finish();
+
 
                                                     MotionToast.Companion.createColorToast(sign_up.this,
                                                             "Отлично!",

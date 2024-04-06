@@ -35,7 +35,7 @@ public class sing_in extends AppCompatActivity {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
+        if (currentUser != null) {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
             finish();
@@ -66,13 +66,13 @@ public class sing_in extends AppCompatActivity {
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email,password;
+                String email, password;
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
 
-                if(TextUtils.isEmpty(email)){
+                if (TextUtils.isEmpty(email)) {
 
-                    MotionToast.Companion.createColorToast(sing_in.this,"Ошибка!",
+                    MotionToast.Companion.createColorToast(sing_in.this, "Ошибка!",
                             "Введите Email.",
                             MotionToastStyle.WARNING,
                             MotionToast.GRAVITY_BOTTOM,
@@ -82,9 +82,9 @@ public class sing_in extends AppCompatActivity {
 
                 }
 
-                if(TextUtils.isEmpty(password)){
+                if (TextUtils.isEmpty(password)) {
 
-                    MotionToast.Companion.createColorToast(sing_in.this,"Ошибка!",
+                    MotionToast.Companion.createColorToast(sing_in.this, "Ошибка!",
                             "Введите пароль.",
                             MotionToastStyle.WARNING,
                             MotionToast.GRAVITY_BOTTOM,
@@ -95,34 +95,34 @@ public class sing_in extends AppCompatActivity {
                 }
 
                 mAuth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
 
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-
+                                FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
                                 if (task.isSuccessful()) {
-                                    MotionToast.Companion.createColorToast(sing_in.this,
-                                            "Отлично!",
-                                            "Вы вошли в аккаунт!",
-                                            MotionToastStyle.SUCCESS,
-                                            MotionToast.GRAVITY_BOTTOM,
-                                            MotionToast.LONG_DURATION,
-                                            ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
-                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                                    startActivity(intent);
-                                    finish();
-                                } else {
+                                    if (firebaseAuth.getCurrentUser().isEmailVerified()) {
+                                        MotionToast.Companion.createColorToast(sing_in.this,
+                                                "Отлично!",
+                                                "Вы вошли в аккаунт!",
+                                                MotionToastStyle.SUCCESS,
+                                                MotionToast.GRAVITY_BOTTOM,
+                                                MotionToast.LONG_DURATION,
+                                                ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        startActivity(intent);
+                                        finish();
+                                    } else {
 
-                                    MotionToast.Companion.createColorToast(sing_in.this,
-                                            "Ошибка!",
-                                            "Не получилось зайти в аккаунт!",
-                                            MotionToastStyle.ERROR,
-                                            MotionToast.GRAVITY_BOTTOM,
-                                            MotionToast.LONG_DURATION,
-                                            ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
-
-
+                                        MotionToast.Companion.createColorToast(sing_in.this,
+                                                "Ошибка!",
+                                                "Не получилось зайти в аккаунт!",
+                                                MotionToastStyle.ERROR,
+                                                MotionToast.GRAVITY_BOTTOM,
+                                                MotionToast.LONG_DURATION,
+                                                ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                                    }
                                 }
                             }
                         });
@@ -130,23 +130,23 @@ public class sing_in extends AppCompatActivity {
         });
     }
 
-    @Override
-    public void onBackPressed(){
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(sing_in.this);
-        alertDialog.setTitle("Выход с приложения");
-        alertDialog.setMessage("Вы хотите выйти из приложения?");
-        alertDialog.setPositiveButton("Да",new DialogInterface.OnClickListener(){
             @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finishAffinity();
+            public void onBackPressed() {
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(sing_in.this);
+                alertDialog.setTitle("Выход с приложения");
+                alertDialog.setMessage("Вы хотите выйти из приложения?");
+                alertDialog.setPositiveButton("Да", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finishAffinity();
+                    }
+                });
+                alertDialog.setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                alertDialog.show();
             }
-        });
-        alertDialog.setNegativeButton("Нет", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-        alertDialog.show();
-    }
-}
+        }

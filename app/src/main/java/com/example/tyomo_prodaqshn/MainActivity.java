@@ -113,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
+
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
         alertDialog.setTitle("Выход с приложения");
         alertDialog.setMessage("Вы хотите выйти из приложения?");
