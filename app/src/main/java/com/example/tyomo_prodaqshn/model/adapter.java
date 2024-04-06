@@ -14,6 +14,7 @@ import com.example.tyomo_prodaqshn.R;
 import java.util.List;
 
 public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
+    int number1 = 0;
     private List<UserModel> list;
     Context context;
 
@@ -35,6 +36,7 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
     public void onBindViewHolder(@NonNull adapter.UserHolder holder, int position) {
         holder.name.setText(list.get(position).getName());
         holder.bal.setText("" + list.get(position).getBal());
+        holder.number.setText(Integer.toString(position + 1) + ")");
 
     }
 
@@ -48,6 +50,7 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
         private TextView name;
         private TextView bal;
         private TextView uzor;
+        private TextView number;
 
 
         public UserHolder(@NonNull View itemView) {
@@ -55,6 +58,7 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
             name = itemView.findViewById(R.id.Name);
             bal = itemView.findViewById(R.id.bal);
             uzor = itemView.findViewById(R.id.uzor);
+            number = itemView.findViewById(R.id.number);
 
 
 

@@ -79,6 +79,15 @@
             android:text="войти"
             android:textSize="20dp" />
 
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:visibility="gone"
+            />
+
 
         <Button
             android:id="@+id/reg"

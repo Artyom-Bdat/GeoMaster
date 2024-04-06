@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.app.Notification;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ public class sing_in extends AppCompatActivity {
     Button login_btn;
     FirebaseAuth mAuth;
     Button singin_buton;
+    private Notification.Builder progressBar;
 
 
     @Override
@@ -148,5 +150,7 @@ public class sing_in extends AppCompatActivity {
                     }
                 });
                 alertDialog.show();
+
             }
-        }
+}
+

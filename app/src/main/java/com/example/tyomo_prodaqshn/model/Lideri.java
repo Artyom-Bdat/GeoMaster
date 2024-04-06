@@ -89,7 +89,6 @@ public class Lideri extends AppCompatActivity {
                 // }
 
                UserModel model = snapshot.toObject(UserModel.class);
-                Toast.makeText(this, "+", Toast.LENGTH_SHORT).show();
 
                 //assert geoPoint != null;
                 //Toast.makeText(getContext(), geoPoint.toString(), Toast.LENGTH_SHORT).show();

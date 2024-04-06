@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.app.Notification;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class sign_up extends AppCompatActivity {
     FirebaseAuth mAuth;
     Button sing_up;
     UserModel userModel;
+    private Notification.Builder progressBar;
 
     public void onStart() {
         super.onStart();
@@ -189,6 +191,5 @@ public class sign_up extends AppCompatActivity {
         });
         alertDialog.show();
     }
-
 
 }
