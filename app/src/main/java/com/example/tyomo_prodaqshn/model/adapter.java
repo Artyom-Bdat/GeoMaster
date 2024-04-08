@@ -1,5 +1,7 @@
 package com.example.tyomo_prodaqshn.model;
 
+import static com.example.tyomo_prodaqshn.MainActivity.bal;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tyomo_prodaqshn.R;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
@@ -34,10 +39,20 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull adapter.UserHolder holder, int position) {
+        // Сортируем список по балансу (от большего к меньшему)
+
+        Collections.sort(list, new Comparator<UserModel>() {
+            @Override
+            public int compare(UserModel user1, UserModel user2) {
+                // Сравниваем балансы в обратном порядке (от большего к меньшему)
+                return Double.compare(user2.getBal(), user1.getBal());
+            }
+        });
+
+        // Устанавливаем данные в элементы ViewHolder
         holder.name.setText(list.get(position).getName());
         holder.bal.setText("" + list.get(position).getBal());
         holder.number.setText(Integer.toString(position + 1) + ")");
-
     }
 
     @Override
