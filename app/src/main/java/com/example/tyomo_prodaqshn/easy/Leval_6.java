@@ -1,4 +1,4 @@
-package com.example.tyomo_prodaqshn;
+package com.example.tyomo_prodaqshn.easy;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,12 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import com.example.tyomo_prodaqshn.R;
 import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.patasxaner;
+import com.example.tyomo_prodaqshn.sexan_start_patuhan;
+import com.example.tyomo_prodaqshn.strat_vibor;
+
 
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
@@ -32,7 +37,7 @@ public class Leval_6 extends AppCompatActivity {
                         MotionToast.GRAVITY_BOTTOM,
                         MotionToast.LONG_DURATION,
                         ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold));
-                Intent intent = new Intent(Leval_6.this, start_patuhan_2.class);
+                Intent intent = new Intent(Leval_6.this, very_easy.class);
                 startActivity(intent);
                 UserModel.baler(Leval_6.this);
 
@@ -52,7 +57,7 @@ public class Leval_6 extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        Intent intent = new Intent(Leval_6.this, strat_vibor.class);
+        Intent intent = new Intent(Leval_6.this, very_easy.class);
         startActivity(intent);
     }
 

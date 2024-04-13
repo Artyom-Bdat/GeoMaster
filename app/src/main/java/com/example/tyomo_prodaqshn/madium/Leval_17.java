@@ -1,30 +1,34 @@
-package com.example.tyomo_prodaqshn;
+package com.example.tyomo_prodaqshn.madium;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
-
+import com.example.tyomo_prodaqshn.R;
+import com.example.tyomo_prodaqshn.easy.very_easy;
 import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.patasxaner;
+import com.example.tyomo_prodaqshn.zugaheranist_start_patuhan;
 
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
 
-public class Leval_5 extends AppCompatActivity {
+public class Leval_17 extends AppCompatActivity {
 
-    EditText Leval_5;
+    EditText Leval_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leval5);
+        setContentView(R.layout.activity_leval17);
 
-        Leval_5 = findViewById(R.id.patasxan_Level_5);
-        Leval_5.setOnClickListener(v -> {
-            if(patasxaner.patasxan_2[4].equals(Leval_5.getText().toString())){
+        Leval_1 = findViewById(R.id.patasxan_Level_1);
+        Leval_1.setOnClickListener(v -> {
+            if(patasxaner.madium[4].equals(Leval_1.getText().toString())){
                 MotionToast.Companion.createColorToast(this,
                         "Ответ правелен!",
                         "Молодец!",
@@ -32,9 +36,9 @@ public class Leval_5 extends AppCompatActivity {
                         MotionToast.GRAVITY_BOTTOM,
                         MotionToast.LONG_DURATION,
                         ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold));
-                Intent intent = new Intent(Leval_5.this, start_patuhan_2.class);
+                Intent intent = new Intent(Leval_17.this, madium.class);
                 startActivity(intent);
-                UserModel.baler(Leval_5.this);
+                UserModel.baler(Leval_17.this);
 
             }else{
                 MotionToast.Companion.createColorToast(this,
@@ -48,16 +52,15 @@ public class Leval_5 extends AppCompatActivity {
         });
     }
 
-
-
     @Override
     public void onBackPressed(){
-        Intent intent = new Intent(Leval_5.this, strat_vibor.class);
+        Intent intent = new Intent(Leval_17.this, madium.class);
         startActivity(intent);
     }
 
     public void info(View view) {
-        Intent intent = new Intent(Leval_5.this, klor_diametr_radius.class);
+        Intent intent = new Intent(Leval_17.this, zugaheranist_start_patuhan.class);
         startActivity(intent);
     }
+
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".east_2.Leval_8">
+    tools:context=".east_2.Leval_11">
 
     <androidx.cardview.widget.CardView
         android:layout_width="325dp"
@@ -21,34 +21,33 @@
 
 
         <TextView
-            android:layout_width="300dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="70dp"
-            android:text="Вычислите диаметр и радиус круга если S = 𝜋81"
-            android:textSize="30dp"
+            android:layout_width="315dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Задан треугольник ABC,длины сторон которого AC=17,BC=14,Угол ABC = 60.Найти длину третьей стороны рассматриваемого треугольника."
+            android:textSize="24dp"
             android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="290dp"
-            android:layout_height="40dp"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="260dp"
-            android:textSize="13dp"
-            android:text="Пишитье сперва радиус потом диаметр,между ними нужно поставить точку."
-            />
 
         <EditText
             android:id="@+id/patasxan_Level_1"
-            android:layout_width="230dp"
+            android:layout_width="200dp"
             android:layout_height="50dp"
             android:textColor="@color/white"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="50dp"
             android:layout_marginTop="300dp"
             android:background="@drawable/edit_text_rounder_corner"
             android:backgroundTint="@color/blue"
-            android:inputType="numberDecimal" />
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/armat"
+            android:textSize="50dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="15dp"
+            />
 
         <ImageView
             android:id="@+id/info"

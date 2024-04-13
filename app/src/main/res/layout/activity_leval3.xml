@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".Leval_3">
+    tools:context=".easy.Leval_3">
 
     <androidx.cardview.widget.CardView
         android:layout_width="325dp"

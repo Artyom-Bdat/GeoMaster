@@ -23,7 +23,7 @@
             android:layout_width="400dp"
             android:layout_height="100dp"
             android:textAlignment="center"
-            android:text="Уровень:легкий"
+            android:text="Уровень:Очень трудный"
             android:textColor="@color/blue"
             android:textStyle="bold"
             android:textSize="20dp"
@@ -62,26 +62,13 @@
             android:layout_alignParentBottom="true"
             android:backgroundTint="@color/blue"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="430dp"
+            android:layout_marginTop="375dp"
             android:text="назад"
             android:onClick="nazad"
             android:textColor="@color/white"
             android:textSize="20dp"
             />
 
-        <Button
-            android:id="@+id/dale"
-            android:layout_width="125dp"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:backgroundTint="@color/blue"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="380dp"
-            android:text="Дальше"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:onClick="dale"
-            />
 
 
 

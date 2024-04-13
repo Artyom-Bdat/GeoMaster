@@ -1,4 +1,4 @@
-package com.example.tyomo_prodaqshn;
+package com.example.tyomo_prodaqshn.easy;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,12 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tyomo_prodaqshn.R;
+import com.example.tyomo_prodaqshn.strat_vibor;
+
 import java.util.Random;
 
-public class start_patuhan_2 extends AppCompatActivity {
+public class very_easy extends AppCompatActivity {
 
     Button dale;
 
@@ -21,7 +24,7 @@ public class start_patuhan_2 extends AppCompatActivity {
 
         dale= findViewById(R.id.dale);
         dale.setOnClickListener(v -> {
-            Intent intent = new Intent(start_patuhan_2.this, start_patuhan_3.class);
+            Intent intent = new Intent(very_easy.this, easy.class);
             startActivity(intent);
 
         });
@@ -38,22 +41,22 @@ public class start_patuhan_2 extends AppCompatActivity {
         Intent intent;
         switch (randomLevel) {
             case 1:
-                intent = new Intent(start_patuhan_2.this, Leval_1.class);
+                intent = new Intent(very_easy.this, Leval_1.class);
                 break;
             case 2:
-                intent = new Intent(start_patuhan_2.this, Leval_2.class);
+                intent = new Intent(very_easy.this, Leval_2.class);
                 break;
             case 3:
-                intent = new Intent(start_patuhan_2.this, Leval_3.class);
+                intent = new Intent(very_easy.this, Leval_3.class);
                 break;
             case 4:
-                intent = new Intent(start_patuhan_2.this, Leval_4.class);
+                intent = new Intent(very_easy.this, Leval_4.class);
                 break;
             case 5:
-                intent = new Intent(start_patuhan_2.this, Leval_5.class);
+                intent = new Intent(very_easy.this, Leval_5.class);
                 break;
             case 6:
-                intent = new Intent(start_patuhan_2.this, Leval_6.class);
+                intent = new Intent(very_easy.this, Leval_6.class);
                 break;
             default:
                 // Handle unexpected case
@@ -66,12 +69,12 @@ public class start_patuhan_2 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(start_patuhan_2.this, strat_vibor.class);
+        Intent intent = new Intent(very_easy.this, strat_vibor.class);
         startActivity(intent);
     }
 
     public void kvibru(View view) {
-        Intent intent = new Intent(start_patuhan_2.this, strat_vibor.class);
+        Intent intent = new Intent(very_easy.this, strat_vibor.class);
         startActivity(intent);
     }
 

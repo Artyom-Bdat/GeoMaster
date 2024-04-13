@@ -15,61 +15,85 @@
         android:theme="@style/Theme.Tyomo_Prodaqshn"
         tools:targetApi="31">
         <activity
+            android:name=".madium.Leval_17"
+            android:exported="false" />
+        <activity
+            android:name=".madium.Leval_16"
+            android:exported="false" />
+        <activity
+            android:name=".madium.Leval_15"
+            android:exported="false" />
+        <activity
+            android:name=".madium.Leval_14"
+            android:exported="false" />
+        <activity
+            android:name=".madium.Leval_13"
+            android:exported="false" />
+        <activity
+            android:name=".very_hard.very_hard"
+            android:exported="false" />
+        <activity
+            android:name=".hard.hard"
+            android:exported="false" />
+        <activity
+            android:name=".madium.madium"
+            android:exported="false" />
+        <activity
             android:name=".user_item"
             android:exported="false" />
         <activity
             android:name=".model.Lideri"
             android:exported="false" />
         <activity
-            android:name=".Leval_7"
+            android:name=".east_2.Leval_7"
             android:exported="false" />
         <activity
-            android:name=".start_patuhan_3"
+            android:name=".easy.easy"
             android:exported="false" />
         <activity
-            android:name=".Leval_12"
+            android:name=".east_2.Leval_12"
             android:exported="false" />
         <activity
-            android:name=".Leval_11"
+            android:name=".east_2.Leval_11"
             android:exported="false" />
         <activity
-            android:name=".Leval_10"
+            android:name=".east_2.Leval_10"
             android:exported="false" />
         <activity
-            android:name=".Leval_9"
+            android:name=".east_2.Leval_9"
             android:exported="false" />
         <activity
-            android:name=".Leval_8"
+            android:name=".east_2.Leval_8"
             android:exported="false" />
         <activity
             android:name=".hesht.HeshtActivity"
             android:exported="false" />
         <activity
-            android:name=".Leval_6"
+            android:name=".easy.Leval_6"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Leval_5"
+            android:name=".easy.Leval_5"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Leval_4"
+            android:name=".easy.Leval_4"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Leval_3"
+            android:name=".easy.Leval_3"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Leval_2"
+            android:name=".easy.Leval_2"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Leval_1"
+            android:name=".easy.Leval_1"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".start_patuhan_2"
+            android:name=".easy.very_easy"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

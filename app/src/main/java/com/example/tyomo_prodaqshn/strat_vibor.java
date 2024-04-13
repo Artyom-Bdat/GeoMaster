@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.tyomo_prodaqshn.easy.very_easy;
+
 public class strat_vibor extends AppCompatActivity {
 
     @Override
@@ -25,7 +27,7 @@ public class strat_vibor extends AppCompatActivity {
     }
 
     public void Click_up(View view) {
-        Intent intent = new Intent(strat_vibor.this, start_patuhan_2.class);
+        Intent intent = new Intent(strat_vibor.this, very_easy.class);
         startActivity(intent);
     }
 }

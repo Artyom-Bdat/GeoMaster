@@ -1,4 +1,4 @@
-package com.example.tyomo_prodaqshn;
+package com.example.tyomo_prodaqshn.east_2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,22 +8,27 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import com.example.tyomo_prodaqshn.R;
+import com.example.tyomo_prodaqshn.easy.easy;
 import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.patasxaner;
+import com.example.tyomo_prodaqshn.qarankyun_1;
 
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
 
-public class Leval_11 extends AppCompatActivity {
+public class Leval_7 extends AppCompatActivity {
+
     EditText Leval_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leval11);
+        setContentView(R.layout.activity_leval7);
 
         Leval_1 = findViewById(R.id.patasxan_Level_1);
         Leval_1.setOnClickListener(v -> {
-            if (patasxaner.Hesht[4].equals(Leval_1.getText().toString())) {
+            if (patasxaner.Hesht[0].equals(Leval_1.getText().toString())) {
                 MotionToast.Companion.createColorToast(this,
                         "Ответ правелен!",
                         "Молодец!",
@@ -31,9 +36,10 @@ public class Leval_11 extends AppCompatActivity {
                         MotionToast.GRAVITY_BOTTOM,
                         MotionToast.LONG_DURATION,
                         ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold));
-                Intent intent = new Intent(Leval_11.this, start_patuhan_3.class);
+                Intent intent = new Intent(Leval_7.this, easy.class);
                 startActivity(intent);
-                UserModel.baler(Leval_11.this);
+                UserModel.baler(Leval_7.this);
+
             } else {
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -48,12 +54,12 @@ public class Leval_11 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(Leval_11.this, start_patuhan_3.class);
+        Intent intent = new Intent(Leval_7.this, easy.class);
         startActivity(intent);
     }
 
     public void info(View view) {
-        Intent intent = new Intent(Leval_11.this, erankyun_start_patuhan.class);
+        Intent intent = new Intent(Leval_7.this, qarankyun_1.class);
         startActivity(intent);
     }
 }

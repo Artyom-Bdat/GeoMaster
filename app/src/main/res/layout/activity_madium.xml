@@ -23,7 +23,7 @@
             android:layout_width="400dp"
             android:layout_height="100dp"
             android:textAlignment="center"
-            android:text="Уровень:легкий"
+            android:text="Уровень:Сложный"
             android:textColor="@color/blue"
             android:textStyle="bold"
             android:textSize="20dp"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".start_patuhan_2">
+    tools:context=".easy.very_easy">
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
@@ -58,7 +58,7 @@
 
         <Button
             android:id="@+id/dale"
-            android:layout_width="123dp"
+            android:layout_width="125dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:backgroundTint="@color/blue"
@@ -73,7 +73,7 @@
 
         <Button
             android:id="@+id/home"
-            android:layout_width="123dp"
+            android:layout_width="125dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:backgroundTint="@color/blue"
