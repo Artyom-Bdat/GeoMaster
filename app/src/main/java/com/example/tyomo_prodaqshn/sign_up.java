@@ -13,6 +13,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import com.example.tyomo_prodaqshn.model.UserModel;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -34,8 +35,7 @@ public class sign_up extends AppCompatActivity {
     FirebaseAuth mAuth;
     Button sing_up;
     UserModel userModel;
-    private Notification.Builder progressBar;
-
+    ProgressBar progressBar;
     public void onStart() {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -59,6 +59,7 @@ public class sign_up extends AppCompatActivity {
         register_btn = findViewById(R.id.register_btn);
         mAuth = FirebaseAuth.getInstance();
         sing_up = findViewById(R.id.singup_Button);
+        progressBar = findViewById(R.id.progress_bar);
 
         sing_up.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,8 +80,12 @@ public class sign_up extends AppCompatActivity {
                 password = String.valueOf(editTextPassword.getText());
                 name = String.valueOf(editTextName.getText());
 
-                if(TextUtils.isEmpty(name) || name.length() <= 3){
+                register_btn.setVisibility(View.INVISIBLE);
+                progressBar.setVisibility(View.VISIBLE);
 
+                if(TextUtils.isEmpty(name) || name.length() <= 3){
+                    register_btn.setVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.INVISIBLE);
                     MotionToast.Companion.createColorToast(sign_up.this,"Ошибка!",
                             "Введите Имя ползватьеля.",
                             MotionToastStyle.WARNING,
@@ -93,7 +98,8 @@ public class sign_up extends AppCompatActivity {
 
 
                 if(TextUtils.isEmpty(email) | email.length() <= 12){
-
+                    register_btn.setVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.INVISIBLE);
                     MotionToast.Companion.createColorToast(sign_up.this,"Ошибка!",
                             "Введите Email.",
                             MotionToastStyle.WARNING,
@@ -105,7 +111,8 @@ public class sign_up extends AppCompatActivity {
                 }
 
                 if(TextUtils.isEmpty(password) | password.length() <= 6){
-
+                    register_btn.setVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.INVISIBLE);
                     MotionToast.Companion.createColorToast(sign_up.this,"Ошибка!",
                             "Введите пароль.",
                             MotionToastStyle.WARNING,
@@ -133,20 +140,23 @@ public class sign_up extends AppCompatActivity {
                                             public void onComplete(@NonNull Task<Void> task) {
 
                                                 if (task.isSuccessful()) {
-
+                                                    register_btn.setVisibility(View.VISIBLE);
+                                                    progressBar.setVisibility(View.INVISIBLE);
                                                     firebaseAuth.getCurrentUser().sendEmailVerification();
                                                     firebaseAuth.signOut();
                                                     startActivity(new Intent(sign_up.this, sing_in.class));
-                                                    finish();
+
 
 
                                                     MotionToast.Companion.createColorToast(sign_up.this,
                                                             "Отлично!",
-                                                            "Аккаунт создан!",
+                                                            "Проверьте почту!",
                                                             MotionToastStyle.SUCCESS,
                                                             MotionToast.GRAVITY_BOTTOM,
                                                             MotionToast.LONG_DURATION,
                                                             ResourcesCompat.getFont(sign_up.this, www.sanju.motiontoast.R.font.helveticabold));
+
+                                                    finish();
                                                 }
                                             }
                                         });
@@ -155,9 +165,11 @@ public class sign_up extends AppCompatActivity {
 
                                 } else {
                                     // If sign in fails, display a message to the user.
+                                    register_btn.setVisibility(View.VISIBLE);
+                                    progressBar.setVisibility(View.INVISIBLE);
                                     MotionToast.Companion.createColorToast(sign_up.this,
                                             "Ошибка!",
-                                            "Подобный аккаунт уже существует!",
+                                            "Произошла ошибка!",
                                             MotionToastStyle.ERROR,
                                             MotionToast.GRAVITY_BOTTOM,
                                             MotionToast.LONG_DURATION,

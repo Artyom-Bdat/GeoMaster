@@ -13,6 +13,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -29,7 +30,7 @@ public class sing_in extends AppCompatActivity {
     Button login_btn;
     FirebaseAuth mAuth;
     Button singin_buton;
-    private Notification.Builder progressBar;
+    ProgressBar progressBar;
 
 
     @Override
@@ -54,6 +55,7 @@ public class sing_in extends AppCompatActivity {
         login_btn = findViewById(R.id.login_btn);
         mAuth = FirebaseAuth.getInstance();
         singin_buton = findViewById(R.id.reg);
+        progressBar = findViewById(R.id.progress_bar);
 
         singin_buton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,9 +73,12 @@ public class sing_in extends AppCompatActivity {
                 String email, password;
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
+                login_btn.setVisibility(View.INVISIBLE);
+                progressBar.setVisibility(View.VISIBLE);
 
                 if (TextUtils.isEmpty(email)) {
-
+                    login_btn.setVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.INVISIBLE);
                     MotionToast.Companion.createColorToast(sing_in.this, "Ошибка!",
                             "Введите Email.",
                             MotionToastStyle.WARNING,
@@ -85,7 +90,8 @@ public class sing_in extends AppCompatActivity {
                 }
 
                 if (TextUtils.isEmpty(password)) {
-
+                    login_btn.setVisibility(View.VISIBLE);
+                    progressBar.setVisibility(View.INVISIBLE);
                     MotionToast.Companion.createColorToast(sing_in.this, "Ошибка!",
                             "Введите пароль.",
                             MotionToastStyle.WARNING,
@@ -105,6 +111,8 @@ public class sing_in extends AppCompatActivity {
                                 FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
                                 if (task.isSuccessful()) {
                                     if (firebaseAuth.getCurrentUser().isEmailVerified()) {
+                                        login_btn.setVisibility(View.VISIBLE);
+                                        progressBar.setVisibility(View.INVISIBLE);
                                         MotionToast.Companion.createColorToast(sing_in.this,
                                                 "Отлично!",
                                                 "Вы вошли в аккаунт!",
@@ -116,7 +124,8 @@ public class sing_in extends AppCompatActivity {
                                         startActivity(intent);
                                         finish();
                                     } else {
-
+                                        login_btn.setVisibility(View.VISIBLE);
+                                        progressBar.setVisibility(View.INVISIBLE);
                                         MotionToast.Companion.createColorToast(sing_in.this,
                                                 "Ошибка!",
                                                 "Не получилось зайти в аккаунт!",
