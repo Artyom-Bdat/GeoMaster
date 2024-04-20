@@ -27,6 +27,7 @@ public class very_easy extends AppCompatActivity {
         dale.setOnClickListener(v -> {
             Intent intent = new Intent(very_easy.this, easy.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
 
         });
 

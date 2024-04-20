@@ -22,7 +22,7 @@ public class Gund_s extends AppCompatActivity {
         setContentView(R.layout.activity_gund_s);
         patasxan_inpat = findViewById(R.id.patasxan_inpat);
         patasxan_inpat.setOnClickListener(v -> {
-            if(patasxaner.modek_3d[5].equals(patasxan_inpat.getText().toString())){
+            if(patasxaner.modek_3d[6].equals(patasxan_inpat.getText().toString())){
                 MotionToast.Companion.createColorToast(this,
                         "Ответ правелен!",
                         "Молодец!",

@@ -24,7 +24,7 @@ public class Zug_Slriv extends AppCompatActivity {
 
         patasxan_inpat = findViewById(R.id.patasxan_inpat);
         patasxan_inpat.setOnClickListener(v -> {
-            if(patasxaner.modek_3d[4].equals(patasxan_inpat.getText().toString())){
+            if(patasxaner.modek_3d[5].equals(patasxan_inpat.getText().toString())){
                 MotionToast.Companion.createColorToast(this,
                         "Ответ правелен!",
                         "Молодец!",

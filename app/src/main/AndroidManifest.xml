@@ -15,27 +15,27 @@
         android:theme="@style/Theme.Tyomo_Prodaqshn"
         tools:targetApi="31">
         <activity
-            android:name=".Leval_24"
+            android:name=".hard.Leval_24"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Leval_23"
+            android:name=".hard.Leval_23"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Leval_22"
+            android:name=".hard.Leval_22"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Leval_21"
+            android:name=".hard.Leval_21"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Leval_20"
+            android:name=".hard.Leval_20"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Leavl_19"
+            android:name=".hard.Leavl_19"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity

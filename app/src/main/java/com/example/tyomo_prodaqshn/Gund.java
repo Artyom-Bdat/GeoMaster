@@ -28,7 +28,7 @@ public class Gund extends AppCompatActivity {
     }
 
     public void Gund(View view) {
-        Intent intent = new Intent(Gund.this,modelner3D.class);
+        Intent intent = new Intent(Gund.this,Gund_s.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
