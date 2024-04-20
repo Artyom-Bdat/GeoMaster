@@ -42,6 +42,7 @@ public class sign_up extends AppCompatActivity {
         if(currentUser != null){
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
             finish();
         }
     }
@@ -66,6 +67,7 @@ public class sign_up extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), sing_in.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
                 finish();
             }
 
@@ -140,21 +142,22 @@ public class sign_up extends AppCompatActivity {
                                             public void onComplete(@NonNull Task<Void> task) {
 
                                                 if (task.isSuccessful()) {
+
+                                                    MotionToast.Companion.createColorToast(sign_up.this,
+                                                        "Отлично!",
+                                                        "Проверьте почту!",
+                                                        MotionToastStyle.SUCCESS,
+                                                        MotionToast.GRAVITY_BOTTOM,
+                                                        MotionToast.LONG_DURATION,
+                                                        ResourcesCompat.getFont(sign_up.this, www.sanju.motiontoast.R.font.helveticabold));
+
+
+                                                    overridePendingTransition(0, 0);
                                                     register_btn.setVisibility(View.VISIBLE);
                                                     progressBar.setVisibility(View.INVISIBLE);
                                                     firebaseAuth.getCurrentUser().sendEmailVerification();
                                                     firebaseAuth.signOut();
                                                     startActivity(new Intent(sign_up.this, sing_in.class));
-
-
-
-                                                    MotionToast.Companion.createColorToast(sign_up.this,
-                                                            "Отлично!",
-                                                            "Проверьте почту!",
-                                                            MotionToastStyle.SUCCESS,
-                                                            MotionToast.GRAVITY_BOTTOM,
-                                                            MotionToast.LONG_DURATION,
-                                                            ResourcesCompat.getFont(sign_up.this, www.sanju.motiontoast.R.font.helveticabold));
 
                                                     finish();
                                                 }

@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.example.tyomo_prodaqshn.R;
-import com.example.tyomo_prodaqshn.easy.easy;
 import com.example.tyomo_prodaqshn.model.UserModel;
 import com.example.tyomo_prodaqshn.patasxaner;
 import com.example.tyomo_prodaqshn.qarankyun_Makeres;
@@ -38,6 +37,7 @@ public class Leval_10 extends AppCompatActivity {
                 Intent intent = new Intent(Leval_10.this, easy.class);
                 startActivity(intent);
                 UserModel.baler(Leval_10.this);
+                overridePendingTransition(0, 0);
             } else {
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -54,10 +54,12 @@ public class Leval_10 extends AppCompatActivity {
     public void onBackPressed() {
         Intent intent = new Intent(Leval_10.this, easy.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void info(View view) {
         Intent intent = new Intent(Leval_10.this, qarankyun_Makeres.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }

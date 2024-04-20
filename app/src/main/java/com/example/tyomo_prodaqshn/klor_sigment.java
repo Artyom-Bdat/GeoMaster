@@ -37,6 +37,7 @@ public class klor_sigment extends AppCompatActivity {
                 Intent intent = new Intent(klor_sigment.this, klor_diametr_radius.class);
                 startActivity(intent);
                 UserModel.baler(klor_sigment.this);
+                overridePendingTransition(0, 0);
             }else{
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -53,6 +54,7 @@ public class klor_sigment extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(klor_sigment.this, klor_diametr_radius.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void Click(View view) {

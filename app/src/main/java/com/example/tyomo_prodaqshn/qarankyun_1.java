@@ -25,12 +25,14 @@ public class qarankyun_1 extends AppCompatActivity {
         satrt_patuhan_button.setOnClickListener(v -> {
             Intent intent = new Intent(qarankyun_1.this, start_patuhan.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
 
 
         qarakusu_paragit.setOnClickListener(v -> {
             Intent intent = new Intent(qarankyun_1.this, Activity3.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
 
         });
         qarakusu_makeres_2= findViewById(R.id.qarakusu_makeres_2);
@@ -39,12 +41,14 @@ public class qarankyun_1 extends AppCompatActivity {
 
                     .class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
 
         });
         qarakusu_nerqnadziq= findViewById(R.id.qarakusu_nerqnadzig);
         qarakusu_nerqnadziq.setOnClickListener(v -> {
             Intent intent = new Intent(qarankyun_1.this, qarankyun_nerqnadzigq.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
 
         });
     }
@@ -53,6 +57,7 @@ public class qarankyun_1 extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(qarankyun_1.this, start_patuhan.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
 }

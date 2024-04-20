@@ -52,6 +52,7 @@ public class Lideri extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(Lideri.this, MainActivity.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     @SuppressLint("NotifyDataSetChanged")

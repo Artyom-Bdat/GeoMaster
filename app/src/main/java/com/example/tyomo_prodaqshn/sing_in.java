@@ -41,6 +41,7 @@ public class sing_in extends AppCompatActivity {
         if (currentUser != null) {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
             finish();
         }
     }
@@ -62,6 +63,7 @@ public class sing_in extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), sign_up.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
                 finish();
             }
 
@@ -122,6 +124,7 @@ public class sing_in extends AppCompatActivity {
                                                 ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                         startActivity(intent);
+                                        overridePendingTransition(0, 0);
                                         finish();
                                     } else {
                                         login_btn.setVisibility(View.VISIBLE);

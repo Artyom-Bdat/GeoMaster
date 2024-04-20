@@ -23,12 +23,14 @@ public class sexan_start_patuhan extends AppCompatActivity {
         satrt_patuhan_button.setOnClickListener(v -> {
             Intent intent = new Intent(sexan_start_patuhan.this, start_patuhan.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
 
        sexan_paragit= findViewById(R.id.sexan_paragit);
        sexan_paragit.setOnClickListener(v -> {
             Intent intent = new Intent(sexan_start_patuhan.this, sexan_paragit_act.class);
             startActivity(intent);
+           overridePendingTransition(0, 0);
 
         });
 
@@ -36,6 +38,7 @@ public class sexan_start_patuhan extends AppCompatActivity {
         sexan_makeres.setOnClickListener(v -> {
             Intent intent = new Intent(sexan_start_patuhan.this, com.example.tyomo_prodaqshn.sexan_makeres.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
 
         });
 
@@ -46,6 +49,7 @@ public class sexan_start_patuhan extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(sexan_start_patuhan.this, start_patuhan.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
 }

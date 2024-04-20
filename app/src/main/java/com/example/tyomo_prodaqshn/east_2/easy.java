@@ -1,4 +1,4 @@
-package com.example.tyomo_prodaqshn.easy;
+package com.example.tyomo_prodaqshn.east_2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,12 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tyomo_prodaqshn.R;
-import com.example.tyomo_prodaqshn.east_2.Leval_10;
-import com.example.tyomo_prodaqshn.east_2.Leval_11;
-import com.example.tyomo_prodaqshn.east_2.Leval_12;
-import com.example.tyomo_prodaqshn.east_2.Leval_7;
-import com.example.tyomo_prodaqshn.east_2.Leval_8;
-import com.example.tyomo_prodaqshn.east_2.Leval_9;
+import com.example.tyomo_prodaqshn.easy.very_easy;
 import com.example.tyomo_prodaqshn.madium.madium;
 
 import java.util.Random;
@@ -29,11 +24,13 @@ public class easy extends AppCompatActivity {
     public void nazad(View view) {
         Intent intent = new Intent(easy.this, very_easy.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(easy.this, very_easy.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void RandomLevel(View view) {
@@ -47,21 +44,27 @@ public class easy extends AppCompatActivity {
         switch (randomLevel) {
             case 1:
                 intent = new Intent(easy.this, Leval_7.class);
+                overridePendingTransition(0, 0);
                 break;
             case 2:
                 intent = new Intent(easy.this, Leval_8.class);
+                overridePendingTransition(0, 0);
                 break;
             case 3:
                 intent = new Intent(easy.this, Leval_9.class);
+                overridePendingTransition(0, 0);
                 break;
             case 4:
                 intent = new Intent(easy.this, Leval_10.class);
+                overridePendingTransition(0, 0);
                 break;
             case 5:
                 intent = new Intent(easy.this, Leval_11.class);
+                overridePendingTransition(0, 0);
                 break;
             case 6:
                 intent = new Intent(easy.this, Leval_12.class);
+                overridePendingTransition(0, 0);
                 break;
             default:
                 // Handle unexpected case
@@ -75,5 +78,6 @@ public class easy extends AppCompatActivity {
     public void dale(View view) {
         Intent intent = new Intent(easy.this, madium.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }

@@ -38,15 +38,15 @@
 
     <Button
         android:id="@+id/home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/blue"
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:text="Назад"
-        android:textColor="@color/backgraunds"
+        android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +54,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.942" />
+
+        <Button
+            android:id="@+id/dale"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="center"
+            android:layout_marginTop="170dp"
+            android:text="Дальше"
+            android:onClick="Click"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+             />
 
 
 

@@ -38,6 +38,7 @@ public class erankyun_gradus_gumar extends AppCompatActivity {
                 Intent intent = new Intent(erankyun_gradus_gumar.this, erankyun_start_patuhan.class);
                 startActivity(intent);
                 UserModel.baler(erankyun_gradus_gumar.this);
+                overridePendingTransition(0, 0);
             }else{
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -55,6 +56,7 @@ public class erankyun_gradus_gumar extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(erankyun_gradus_gumar.this,erankyun_start_patuhan.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void Click(View view) {

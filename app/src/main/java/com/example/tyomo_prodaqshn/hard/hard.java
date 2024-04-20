@@ -20,14 +20,17 @@ public class hard extends AppCompatActivity {
     public void nazad(View view) {
         Intent intent = new Intent(hard.this, madium.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(hard.this, madium.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
     public void dale(View view) {
         Intent intent = new Intent(hard.this, very_hard.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }

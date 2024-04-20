@@ -39,6 +39,7 @@ public class Leval_16 extends AppCompatActivity {
                 Intent intent = new Intent(Leval_16.this, madium.class);
                 startActivity(intent);
                 UserModel.baler(Leval_16.this);
+                overridePendingTransition(0, 0);
 
             }else{
                 MotionToast.Companion.createColorToast(this,
@@ -56,11 +57,13 @@ public class Leval_16 extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(Leval_16.this, madium.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void info(View view) {
         Intent intent = new Intent(Leval_16.this, zugaheranist_start_patuhan.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
 }

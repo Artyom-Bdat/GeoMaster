@@ -15,59 +15,148 @@
         android:theme="@style/Theme.Tyomo_Prodaqshn"
         tools:targetApi="31">
         <activity
-            android:name=".madium.Leval_17"
+            android:name=".Leval_24"
+            android:screenOrientation="portrait"
             android:exported="false" />
+        <activity
+            android:name=".Leval_23"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leval_22"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leval_21"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leval_20"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Leavl_19"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Gund_s"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Gund"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Zug_Slriv"
+            android:exported="false" />
+        <activity
+            android:name=".Zug_sb"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Zugaheranist_p"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Zugaheranist_m3"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Burg_Slriv"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Burg_Skoxmnayin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Burg_paragit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".burg_makeres"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modelner3D"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qetion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".madium.Leval_17"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".madium.Leval_16"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".madium.Leval_15"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".madium.Leval_14"
             android:exported="false" />
         <activity
             android:name=".madium.Leval_13"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".very_hard.very_hard"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".hard.hard"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".madium.madium"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".user_item"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".model.Lideri"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_7"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".easy.easy"
-            android:exported="false" />
+            android:name=".east_2.easy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_12"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_11"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_10"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_9"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_8"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".hesht.HeshtActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".easy.Leval_6"
             android:exported="false"

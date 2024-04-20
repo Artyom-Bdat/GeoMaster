@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tyomo_prodaqshn.R;
+import com.example.tyomo_prodaqshn.east_2.easy;
 import com.example.tyomo_prodaqshn.strat_vibor;
 
 import java.util.Random;
@@ -42,21 +43,27 @@ public class very_easy extends AppCompatActivity {
         switch (randomLevel) {
             case 1:
                 intent = new Intent(very_easy.this, Leval_1.class);
+                overridePendingTransition(0, 0);
                 break;
             case 2:
                 intent = new Intent(very_easy.this, Leval_2.class);
+                overridePendingTransition(0, 0);
                 break;
             case 3:
                 intent = new Intent(very_easy.this, Leval_3.class);
+                overridePendingTransition(0, 0);
                 break;
             case 4:
                 intent = new Intent(very_easy.this, Leval_4.class);
+                overridePendingTransition(0, 0);
                 break;
             case 5:
                 intent = new Intent(very_easy.this, Leval_5.class);
+                overridePendingTransition(0, 0);
                 break;
             case 6:
                 intent = new Intent(very_easy.this, Leval_6.class);
+                overridePendingTransition(0, 0);
                 break;
             default:
                 // Handle unexpected case
@@ -71,11 +78,13 @@ public class very_easy extends AppCompatActivity {
     public void onBackPressed() {
         Intent intent = new Intent(very_easy.this, strat_vibor.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void kvibru(View view) {
         Intent intent = new Intent(very_easy.this, strat_vibor.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
 }

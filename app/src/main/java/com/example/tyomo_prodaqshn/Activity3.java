@@ -52,6 +52,7 @@ public class Activity3 extends AppCompatActivity   {
                        ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold));
                Intent intent = new Intent(Activity3.this, qarankyun_1.class);
                startActivity(intent);
+               overridePendingTransition(0, 0);
 
                FirebaseFirestore db = FirebaseFirestore.getInstance();
                DocumentReference userDocument = db.collection("users").document(mAuth.getCurrentUser().getUid());
@@ -80,6 +81,7 @@ public class Activity3 extends AppCompatActivity   {
                            }
                        });
 
+
            }else{
                MotionToast.Companion.createColorToast(this,
                        "Ответ неправильный!",
@@ -102,6 +104,7 @@ public class Activity3 extends AppCompatActivity   {
     public void onBackPressed(){
         Intent intent = new Intent(Activity3.this,qarankyun_1.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void Click(View view) {

@@ -38,6 +38,7 @@ public class shrjan_makeres_act extends AppCompatActivity {
                 Intent intent = new Intent(shrjan_makeres_act.this, klor_diametr_radius.class);
                 startActivity(intent);
                 UserModel.baler(shrjan_makeres_act.this);
+                overridePendingTransition(0, 0);
             }else{
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -54,6 +55,7 @@ public class shrjan_makeres_act extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(shrjan_makeres_act.this, klor_diametr_radius.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void Click(View view) {

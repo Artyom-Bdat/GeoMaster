@@ -7,14 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.tyomo_prodaqshn.R;
-import com.example.tyomo_prodaqshn.easy.Leval_1;
-import com.example.tyomo_prodaqshn.easy.Leval_2;
-import com.example.tyomo_prodaqshn.easy.Leval_3;
-import com.example.tyomo_prodaqshn.easy.Leval_4;
-import com.example.tyomo_prodaqshn.easy.Leval_5;
-import com.example.tyomo_prodaqshn.easy.Leval_6;
-import com.example.tyomo_prodaqshn.easy.easy;
-import com.example.tyomo_prodaqshn.easy.very_easy;
+import com.example.tyomo_prodaqshn.east_2.easy;
 import com.example.tyomo_prodaqshn.hard.hard;
 
 import java.util.Random;
@@ -38,21 +31,27 @@ public class madium extends AppCompatActivity {
         switch (randomLevel) {
             case 1:
                 intent = new Intent(madium.this, Leval_13.class);
+                overridePendingTransition(0, 0);
                 break;
             case 2:
                 intent = new Intent(madium.this, Leval_14.class);
+                overridePendingTransition(0, 0);
                 break;
             case 3:
                 intent = new Intent(madium.this, Leval_15.class);
+                overridePendingTransition(0, 0);
                 break;
             case 4:
                 intent = new Intent(madium.this, Leval_16.class);
+                overridePendingTransition(0, 0);
                 break;
             case 5:
                 intent = new Intent(madium.this, Leval_17.class);
+                overridePendingTransition(0, 0);
                 break;
             case 6:
                 intent = new Intent(madium.this, Leval_18.class);
+                overridePendingTransition(0, 0);
                 break;
             default:
                 // Handle unexpected case
@@ -66,14 +65,17 @@ public class madium extends AppCompatActivity {
     public void nazad(View view) {
         Intent intent = new Intent(madium.this, easy.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(madium.this, easy.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
     public void dale(View view) {
         Intent intent = new Intent(madium.this, hard.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }

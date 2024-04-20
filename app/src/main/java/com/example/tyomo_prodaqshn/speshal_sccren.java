@@ -18,6 +18,7 @@ public class speshal_sccren extends AppCompatActivity {
                 try {
                     sleep(3000);
                     startActivity(new Intent(speshal_sccren.this, sign_up.class));
+                    overridePendingTransition(0, 0);
                     finish();
 
                 }catch(Exception e) {

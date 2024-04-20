@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Zugaheranist_p">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="670dp"
+        android:backgroundTint="#BCF3FA"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Периметр параллелепипеда будет равна сумме всех его сторон."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="150dp"
+            android:text="Например сторана оснаваня будет равна 6,а висота 7."/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginTop="250dp"
+            android:text="Ответ:
+                              P = 6 * 8 + 7 * 4."/>
+
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft= "170dp"
+            app:srcCompat="@drawable/zug_67" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginTop="320dp"
+            android:text="Умножаем на 8 потому что у нас 2 основание."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginTop="410dp"
+            android:text="Эти палочки означают что они равны."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="460dp"
+            android:text="Задание:Вичеслить периметр параллелепипеда если сторона его основания равна 5 а висота равна 7."/>
+
+        <EditText
+            android:id="@+id/patasxan_inpat"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_text_rounder_corner"
+            android:backgroundTint="@color/blue"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="585dp"
+            android:layout_marginStart="75dp"/>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

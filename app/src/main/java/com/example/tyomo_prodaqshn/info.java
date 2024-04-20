@@ -17,6 +17,7 @@ public class info extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(info.this, MainActivity.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
 }

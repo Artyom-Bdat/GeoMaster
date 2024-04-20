@@ -18,6 +18,7 @@ public class klor_diametr_radius extends AppCompatActivity {
         satrt_patuhan_button.setOnClickListener(v -> {
             Intent intent = new Intent(klor_diametr_radius.this, start_patuhan.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
 
         ImageView Klor_radius;
@@ -25,6 +26,7 @@ public class klor_diametr_radius extends AppCompatActivity {
         Klor_radius.setOnClickListener(v -> {
             Intent intent = new Intent(klor_diametr_radius.this, diametr_radius_act.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
 
 
@@ -33,6 +35,7 @@ public class klor_diametr_radius extends AppCompatActivity {
         Klor_makeres.setOnClickListener(v -> {
             Intent intent = new Intent(klor_diametr_radius.this, shrjan_makeres_act.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
 
         ImageView Klor_erkarutyun;
@@ -40,6 +43,7 @@ public class klor_diametr_radius extends AppCompatActivity {
         Klor_erkarutyun.setOnClickListener(v -> {
             Intent intent = new Intent(klor_diametr_radius.this, shrjanagci_erkarutyun.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
 
         ImageView Klor_sektor;
@@ -47,6 +51,7 @@ public class klor_diametr_radius extends AppCompatActivity {
         Klor_sektor.setOnClickListener(v -> {
             Intent intent = new Intent(klor_diametr_radius.this, klor_sektor.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
 
         ImageView Klor_sigment;
@@ -54,6 +59,7 @@ public class klor_diametr_radius extends AppCompatActivity {
         Klor_sigment.setOnClickListener(v -> {
             Intent intent = new Intent(klor_diametr_radius.this, klor_sigment.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
     }
 
@@ -61,6 +67,7 @@ public class klor_diametr_radius extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(klor_diametr_radius.this, start_patuhan.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
 }

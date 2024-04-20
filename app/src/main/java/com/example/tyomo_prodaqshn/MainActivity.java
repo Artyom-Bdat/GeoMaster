@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, strat_vibor.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
             }
         };
         start.setOnClickListener(oclstart);
@@ -91,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         if(User == null){
             Intent intent = new Intent(getApplicationContext(), sing_in.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
             finish();
 
         }
@@ -105,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(getApplicationContext(),sing_in.class);
                 startActivity(intent);
+                overridePendingTransition(0, 0);
                 finish();
             }
         });
@@ -136,10 +139,12 @@ public class MainActivity extends AppCompatActivity {
     public void Click(View view) {
         Intent intent = new Intent(MainActivity.this, info.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void Lider(View view) {
         Intent intent = new Intent(MainActivity.this, Lideri.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }

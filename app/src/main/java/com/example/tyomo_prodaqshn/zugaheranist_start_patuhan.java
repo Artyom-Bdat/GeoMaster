@@ -22,6 +22,7 @@ public class zugaheranist_start_patuhan extends AppCompatActivity {
        zugaheranist_paragit.setOnClickListener(v -> {
             Intent intent = new Intent(zugaheranist_start_patuhan.this, zugaheranist_paragit_act.class);
             startActivity(intent);
+           overridePendingTransition(0, 0);
 
         });
 
@@ -29,6 +30,7 @@ public class zugaheranist_start_patuhan extends AppCompatActivity {
         zugaheranist_makeres.setOnClickListener(v -> {
             Intent intent = new Intent(zugaheranist_start_patuhan.this, zugaheranist_makeres_act.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
 
         });
 
@@ -36,6 +38,7 @@ public class zugaheranist_start_patuhan extends AppCompatActivity {
         satrt_patuhan_button.setOnClickListener(v -> {
             Intent intent = new Intent(zugaheranist_start_patuhan.this, start_patuhan.class);
             startActivity(intent);
+            overridePendingTransition(0, 0);
         });
     }
 
@@ -43,6 +46,7 @@ public class zugaheranist_start_patuhan extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(zugaheranist_start_patuhan.this, start_patuhan.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
 }

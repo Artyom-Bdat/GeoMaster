@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".modelner3D">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="670dp"
+        android:backgroundTint="#BCF3FA"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="308dp"
+            android:layout_height="127dp"
+            android:text="@string/start_patuhan"
+            android:textSize="37dp"
+            android:textStyle="bold"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:text="Назад"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:onClick="nazad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.942" />
+
+
+
+        <ImageView
+            android:id="@+id/qvadrat_qvadrat"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#BCF3FA"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="140dp"
+            android:onClick="Burg"
+            app:srcCompat="@drawable/piromidka" />
+
+
+        <ImageView
+            android:id="@+id/qarakusu_paragit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="65dp"
+            android:onClick="zugaheranist"
+            android:backgroundTint="@color/backgraunds"
+            android:layout_marginTop="250dp"
+            app:srcCompat="@drawable/zugaheranist" />
+
+        <ImageView
+            android:id="@+id/qarakusu_nerqnadzig"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/backgraunds"
+            android:layout_marginTop="250dp"
+            android:onClick="gund"
+            android:layout_marginStart="215dp"
+            app:srcCompat="@drawable/gund"/>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

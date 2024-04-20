@@ -36,9 +36,10 @@
             android:textColor="@color/white"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="250dp"
+            android:textAlignment="center"
             android:background="@drawable/edit_text_rounder_corner"
             android:backgroundTint="@color/blue"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:layout_width="match_parent"

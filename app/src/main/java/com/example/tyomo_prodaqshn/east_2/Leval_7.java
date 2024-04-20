@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.example.tyomo_prodaqshn.R;
-import com.example.tyomo_prodaqshn.easy.easy;
 import com.example.tyomo_prodaqshn.model.UserModel;
 import com.example.tyomo_prodaqshn.patasxaner;
 import com.example.tyomo_prodaqshn.qarankyun_1;
@@ -39,6 +38,7 @@ public class Leval_7 extends AppCompatActivity {
                 Intent intent = new Intent(Leval_7.this, easy.class);
                 startActivity(intent);
                 UserModel.baler(Leval_7.this);
+                overridePendingTransition(0, 0);
 
             } else {
                 MotionToast.Companion.createColorToast(this,
@@ -56,10 +56,12 @@ public class Leval_7 extends AppCompatActivity {
     public void onBackPressed() {
         Intent intent = new Intent(Leval_7.this, easy.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void info(View view) {
         Intent intent = new Intent(Leval_7.this, qarankyun_1.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }

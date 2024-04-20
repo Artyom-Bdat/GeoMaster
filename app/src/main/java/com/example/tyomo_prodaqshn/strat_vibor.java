@@ -19,15 +19,18 @@ public class strat_vibor extends AppCompatActivity {
     public void Click(View view) {
         Intent intent = new Intent(strat_vibor.this, start_patuhan.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void onBackPressed(){
         Intent intent = new Intent(strat_vibor.this, MainActivity.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     public void Click_up(View view) {
         Intent intent = new Intent(strat_vibor.this, very_easy.class);
         startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 }
