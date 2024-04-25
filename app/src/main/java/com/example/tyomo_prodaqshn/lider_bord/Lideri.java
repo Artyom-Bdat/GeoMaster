@@ -1,4 +1,4 @@
-package com.example.tyomo_prodaqshn.model;
+package com.example.tyomo_prodaqshn.lider_bord;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -11,10 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tyomo_prodaqshn.Activity3;
 import com.example.tyomo_prodaqshn.MainActivity;
 import com.example.tyomo_prodaqshn.R;
-import com.example.tyomo_prodaqshn.qarankyun_1;
+import com.example.tyomo_prodaqshn.model.adapter.adapter;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -27,7 +27,7 @@ public class Lideri extends AppCompatActivity {
     private List<UserModel> list;
     private RecyclerView recyclerView;
     private TextView Title;
-     adapter adapter;
+     com.example.tyomo_prodaqshn.model.adapter.adapter adapter;
 
 
 

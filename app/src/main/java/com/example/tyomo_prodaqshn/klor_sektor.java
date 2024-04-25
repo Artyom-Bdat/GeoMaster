@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;

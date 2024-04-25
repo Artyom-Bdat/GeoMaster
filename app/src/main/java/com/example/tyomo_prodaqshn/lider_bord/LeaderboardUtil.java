@@ -1,4 +1,6 @@
-package com.example.tyomo_prodaqshn.model;// LeaderboardUtil.java
+package com.example.tyomo_prodaqshn.lider_bord;// LeaderboardUtil.java
+
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 
 import java.util.Collections;
 import java.util.Comparator;

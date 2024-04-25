@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.tyomo_prodaqshn.R;
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.example.tyomo_prodaqshn.patasxaner;
 import com.example.tyomo_prodaqshn.zugaheranist_start_patuhan;
 

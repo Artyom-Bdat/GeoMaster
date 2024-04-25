@@ -9,9 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.tyomo_prodaqshn.R;
-import com.example.tyomo_prodaqshn.easy.very_easy;
 import com.example.tyomo_prodaqshn.erankyun_start_patuhan;
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.example.tyomo_prodaqshn.patasxaner;
 
 import www.sanju.motiontoast.MotionToast;

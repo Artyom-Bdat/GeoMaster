@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.tyomo_prodaqshn.model.Lideri;
+import com.example.tyomo_prodaqshn.lider_bord.Lideri;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth auth;
     Button logout;
     FirebaseUser User;
+    public static String  nameText;
     public static FirebaseAuth mAuth;
 
 
@@ -75,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
                         // Получаем значение поля "bal" из документа
 
                         bali.setText(Long.toString( document.getLong("bal")));
-                        name.setText(document.getString("name"));
+                       nameText = document.getString("name");
+                        name.setText(nameText);
                     } else {
                         Log.d("Firestore", "No such document");
                     }

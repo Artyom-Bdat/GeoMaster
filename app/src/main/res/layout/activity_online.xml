@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".online">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="350dp"
+    android:layout_height="670dp"
+    android:backgroundTint="#BCF3FA"
+    app:cardCornerRadius="30dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.491"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.491">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        android:text="Задание от пользователей"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/Title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/baseline_playlist_add_circle_24"
+        android:layout_marginTop="600dp"
+        android:onClick="get_question"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

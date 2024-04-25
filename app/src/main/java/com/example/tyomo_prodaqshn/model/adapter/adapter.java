@@ -1,19 +1,18 @@
-package com.example.tyomo_prodaqshn.model;
-
-import static com.example.tyomo_prodaqshn.MainActivity.bal;
+package com.example.tyomo_prodaqshn.model.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tyomo_prodaqshn.R;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -50,7 +49,7 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
         });
 
         // Устанавливаем данные в элементы ViewHolder
-        holder.name.setText(list.get(position).getName());
+        holder.Name.setText(list.get(position).getName());
         holder.bal.setText("" + list.get(position).getBal());
         holder.number.setText(Integer.toString(position + 1) + ")");
     }
@@ -62,15 +61,15 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
 
 
      class UserHolder extends RecyclerView.ViewHolder {
-        private TextView name;
+        private TextView Name;
         private TextView bal;
-        private TextView uzor;
+        private ImageView uzor;
         private TextView number;
 
 
         public UserHolder(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.Name);
+            Name = itemView.findViewById(R.id.Name);
             bal = itemView.findViewById(R.id.bal);
             uzor = itemView.findViewById(R.id.uzor);
             number = itemView.findViewById(R.id.number);

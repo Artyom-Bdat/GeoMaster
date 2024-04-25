@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;

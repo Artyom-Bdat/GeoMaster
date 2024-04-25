@@ -79,7 +79,7 @@
             android:backgroundTint="#BCF3FA"
             android:layout_marginTop="320dp"
             android:layout_marginLeft="100dp"
-            app:srcCompat="@drawable/zugaheranist" />
+            app:srcCompat="@drawable/zugaheragit" />
 
         <ImageView
             android:id="@+id/sexan"

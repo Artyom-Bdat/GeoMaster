@@ -10,9 +10,8 @@ import android.widget.EditText;
 
 import com.example.tyomo_prodaqshn.R;
 import com.example.tyomo_prodaqshn.klor_diametr_radius;
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.example.tyomo_prodaqshn.patasxaner;
-import com.example.tyomo_prodaqshn.strat_vibor;
 
 
 import www.sanju.motiontoast.MotionToast;

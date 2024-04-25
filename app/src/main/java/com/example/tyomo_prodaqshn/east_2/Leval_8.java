@@ -10,7 +10,7 @@ import androidx.core.content.res.ResourcesCompat;
 
 import com.example.tyomo_prodaqshn.R;
 import com.example.tyomo_prodaqshn.klor_diametr_radius;
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.example.tyomo_prodaqshn.patasxaner;
 
 import www.sanju.motiontoast.MotionToast;

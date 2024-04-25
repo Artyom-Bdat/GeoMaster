@@ -1,4 +1,4 @@
-package com.example.tyomo_prodaqshn.model;
+package com.example.tyomo_prodaqshn.model.users_models;
 
 
 import android.app.Activity;

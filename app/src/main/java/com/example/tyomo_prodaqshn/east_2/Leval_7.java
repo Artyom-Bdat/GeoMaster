@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.example.tyomo_prodaqshn.R;
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.example.tyomo_prodaqshn.patasxaner;
 import com.example.tyomo_prodaqshn.qarankyun_1;
 

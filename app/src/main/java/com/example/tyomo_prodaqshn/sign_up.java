@@ -5,7 +5,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
-import android.app.Notification;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -23,8 +22,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
 
@@ -85,7 +82,7 @@ public class sign_up extends AppCompatActivity {
                 register_btn.setVisibility(View.INVISIBLE);
                 progressBar.setVisibility(View.VISIBLE);
 
-                if(TextUtils.isEmpty(name) || name.length() <= 3){
+                if(TextUtils.isEmpty(name) ){
                     register_btn.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.INVISIBLE);
                     MotionToast.Companion.createColorToast(sign_up.this,"Ошибка!",
@@ -99,7 +96,7 @@ public class sign_up extends AppCompatActivity {
                 }
 
 
-                if(TextUtils.isEmpty(email) | email.length() <= 12){
+                if(TextUtils.isEmpty(email) ){
                     register_btn.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.INVISIBLE);
                     MotionToast.Companion.createColorToast(sign_up.this,"Ошибка!",
@@ -112,7 +109,7 @@ public class sign_up extends AppCompatActivity {
 
                 }
 
-                if(TextUtils.isEmpty(password) | password.length() <= 6){
+                if(TextUtils.isEmpty(password) ){
                     register_btn.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.INVISIBLE);
                     MotionToast.Companion.createColorToast(sign_up.this,"Ошибка!",

@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import com.example.tyomo_prodaqshn.R;
 import com.example.tyomo_prodaqshn.burg_makeres;
-import com.example.tyomo_prodaqshn.model.UserModel;
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.example.tyomo_prodaqshn.patasxaner;
 
 import www.sanju.motiontoast.MotionToast;
