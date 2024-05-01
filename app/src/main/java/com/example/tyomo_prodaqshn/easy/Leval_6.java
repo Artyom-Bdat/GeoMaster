@@ -26,7 +26,7 @@ public class Leval_6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leval6);
 
-        Leval_6 = findViewById(R.id.patasxan_Level_6);
+        Leval_6 = findViewById(R.id.patasxan_Level_1);
         Leval_6.setOnClickListener(v -> {
             if(patasxaner.patasxan_2[5].equals(Leval_6.getText().toString())){
                 MotionToast.Companion.createColorToast(this,

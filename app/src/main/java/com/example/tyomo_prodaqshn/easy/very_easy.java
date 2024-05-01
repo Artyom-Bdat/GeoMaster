@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,21 +16,12 @@ import java.util.Random;
 
 public class very_easy extends AppCompatActivity {
 
-    Button dale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_patuhan2);
 
-
-        dale= findViewById(R.id.dale);
-        dale.setOnClickListener(v -> {
-            Intent intent = new Intent(very_easy.this, easy.class);
-            startActivity(intent);
-            overridePendingTransition(0, 0);
-
-        });
 
     }
 
@@ -88,4 +80,9 @@ public class very_easy extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
+    public void dale(View view) {
+        Intent intent = new Intent(very_easy.this, easy.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
 }

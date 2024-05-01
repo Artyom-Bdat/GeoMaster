@@ -4,111 +4,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/white"
     tools:context=".model.get_question">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="670dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_190sdp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491">
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/uzor_login" />
 
 
-        <TextView
-            android:id="@+id/Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="130dp"
-            android:layout_marginBottom="16dp"
-            android:text="Создание вопросов"
-            android:textSize="32sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:text="Создание вопросов"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_29sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/name_question"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_190sdp"
+        android:ems="20"
+        android:hint="Название вопроса"
+        android:inputType="text"
+        android:paddingLeft="@dimen/_23sdp"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/name_question"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:ems="20"
-            android:gravity="center"
-            android:padding="8dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/disain"
-            android:layout_marginTop="300dp"
-            android:textSize="20dp"
-            android:inputType="text"
-            android:hint="Название вопроса" />
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:ems="20"
+        android:hint="Вопрос"
+        android:inputType="text"
+        android:paddingLeft="@dimen/_23sdp"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_question" />
 
-        <EditText
-            android:id="@+id/question"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:ems="20"
-            android:gravity="center"
-            android:padding="8dp"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/disain"
-            android:layout_marginTop="300dp"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginVertical="360dp"
-            android:hint="Вопрос" />
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:ems="20"
+        android:hint="Ответ"
+        android:inputType="number"
+        android:paddingLeft="@dimen/_23sdp"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
 
-        <EditText
-            android:id="@+id/answer"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:ems="20"
-            android:gravity="center"
-            android:padding="8dp"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/disain"
-            android:textSize="20dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:inputType="number"
-            android:layout_marginVertical="420dp"
-            android:hint="Ответ" />
+    <Button
+        android:id="@+id/get_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:onClick="register"
+        android:text="Создать Вопрос-->"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/get_question"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="500dp"
-            android:layout_marginEnd="25dp"
-            android:backgroundTint="@color/blue"
-            android:gravity="center"
-            android:onClick="register"
-            android:text="Создать Вопрос"
-            android:textSize="20dp" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
 
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="190dp"
-            android:visibility="gone" />
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_320sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586"
+        app:srcCompat="@drawable/baseline_document_scanner_24" />
 
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_200sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366"
+        app:srcCompat="@drawable/baseline_drive_file_rename_outline_24" />
 
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_260sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"
+        app:srcCompat="@drawable/baseline_edit_square_24" />
 
-
-
-
-
-    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

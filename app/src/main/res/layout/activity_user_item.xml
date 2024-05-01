@@ -24,10 +24,10 @@
             android:id="@+id/Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="@dimen/_36sdp"
             android:text="User name"
             android:textAlignment="center"
-            android:textSize="25dp"
+            android:textSize="@dimen/_25sdp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,8 +37,8 @@
 
         <ImageView
             android:id="@+id/uzor"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_35sdp"
             android:layout_weight="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,16 +50,16 @@
 
         <TextView
             android:id="@+id/bal"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/_100sdp"
             android:layout_height="wrap_content"
             android:text="0"
             android:textColor="@color/white"
             android:textAlignment="center"
-            android:textSize="18dp"
+            android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintHorizontal_bias="0.945"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,10 +68,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="25dp"
+            android:textSize="@dimen/_25sdp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-
             app:layout_constraintHorizontal_bias="0.409"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

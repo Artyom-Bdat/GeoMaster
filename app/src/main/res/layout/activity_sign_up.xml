@@ -3,137 +3,195 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/blue"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".sign_up">
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_190sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/uzor_login" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="670dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_115sdp"
+        android:text="Регистрация"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_35sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_190sdp"
+        android:ems="20"
+        android:paddingLeft="@dimen/_30sdp"
+        android:hint="Имя"
+        android:inputType="text"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:ems="20"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="@dimen/_30sdp"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:ems="20"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/_30sdp"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:ems="20"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/_30sdp"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Зарегистрироваться-->"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_44sdp"
+        android:text="Уже есть учетная запись?"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/singup_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_44sdp"
+        android:text="Войдите."
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="@+id/register_btn" />
 
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_255sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/baseline_attach_email_24" />
 
-        <TextView
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
-            android:layout_marginTop="150dp"
-            android:text="Регистрация"
-            android:textSize="40dp" />
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_200sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366"
+        app:srcCompat="@drawable/baseline_account_circle_24" />
 
-        <EditText
-            android:id="@+id/Name"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:ems="20"
-            android:gravity="center"
-            android:padding="8dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/disain"
-            android:layout_marginTop="240dp"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:hint="Имя" />
+    <ImageView
+        android:id="@+id/imageView28df"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_300sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@drawable/zamok" />
 
-        <EditText
-            android:id="@+id/Email"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:ems="20"
-            android:gravity="center"
-            android:padding="8dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/disain"
-            android:layout_marginTop="300dp"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:hint="Email" />
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:ems="20"
-            android:gravity="center"
-            android:padding="8dp"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/disain"
-            android:layout_marginTop="300dp"
-            android:inputType="textPassword"
-            android:textSize="20dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginVertical="360dp"
-            android:hint="Пароль" />
-
-        <EditText
-            android:id="@+id/password1"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:ems="20"
-            android:gravity="center"
-            android:padding="8dp"
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/disain"
-            android:inputType="textPassword"
-            android:textSize="20dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginVertical="420dp"
-            android:hint="Пароль" />
-
-
-        <Button
-            android:id="@+id/register_btn"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="500dp"
-            android:layout_marginEnd="25dp"
-            android:backgroundTint="@color/blue"
-            android:gravity="center"
-            android:text="Зарегистрироваться"
-            android:textSize="20dp" />
-
-
-
-
-
-        <Button
-            android:id="@+id/singup_Button"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="550dp"
-            android:layout_marginEnd="25dp"
-            android:backgroundTint="#BCF3FA"
-            android:gravity="center"
-            android:text="уже зарегистрированы?"
-            android:textColor="@color/black"
-            android:textSize="17dp"
-
-            />
-
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="190dp"
-            android:visibility="gone" />
-
-
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_355sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66"
+        app:srcCompat="@drawable/zamok" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

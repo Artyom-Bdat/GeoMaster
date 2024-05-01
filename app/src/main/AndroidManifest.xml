@@ -12,238 +12,292 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Tyomo_Prodaqshn"
+        android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
         tools:targetApi="31">
         <activity android:name=".online_question"
             android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:excludeFromRecents="false"/>
         <activity
             android:name=".model.get_question"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".online"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".hard.Leval_24"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".hard.Leval_23"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".hard.Leval_22"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".hard.Leval_21"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".hard.Leval_20"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".hard.Leavl_19"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Gund_s"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Gund"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Zug_Slriv"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Zug_sb"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Zugaheranist_p"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Zugaheranist_m3"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Burg_Slriv"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Burg_Skoxmnayin"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Burg_paragit"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".burg_makeres"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".modelner3D"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".qetion"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".madium.Leval_17"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".madium.Leval_16"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".madium.Leval_15"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".madium.Leval_14"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".madium.Leval_13"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".very_hard.very_hard"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".hard.hard"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".madium.madium"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".user_item"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".lider_bord.Lideri"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_7"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".east_2.easy"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".east_2.Leval_12"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".east_2.Leval_11"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".east_2.Leval_10"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_9"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".east_2.Leval_8"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".hesht.HeshtActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".easy.Leval_6"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".easy.Leval_5"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".easy.Leval_4"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".easy.Leval_3"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".easy.Leval_2"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".easy.Leval_1"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".easy.very_easy"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".strat_vibor"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".sign_up"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
         <activity
             android:name=".sing_in"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Tyomo_Prodaqshn.NoActionBar" />
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar" />
         <activity
             android:name=".info"
             android:exported="false"
             android:label="@string/title_activity_info"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Tyomo_Prodaqshn.NoActionBar" />
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar" />
         <activity
             android:name=".klor_sigment"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".klor_sektor"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".erankyun_cos"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".erankyun_sinus"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".erankyun_gradus_gumar"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".zugaheranist_makeres_act"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".speshal_sccren"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Base.Theme.Tyomo_Prodaqshn1">
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -252,74 +306,92 @@
         </activity>
         <activity
             android:name=".zugaheranist_paragit_act"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".zugaheranist_start_patuhan"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".sexan_makeres"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".sexan_paragit_act"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".sexan_start_patuhan"
             android:exported="false"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".erankyun_makeres_act"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".erankyun_paragit_act"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".erankyun_start_patuhan"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".shrjanagci_erkarutyun"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".shrjan_makeres_act"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".diametr_radius_act"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".klor_diametr_radius"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".qarankyun_nerqnadzigq"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".qarankyun_Makeres"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".qarankyun_1"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Activity3"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".start_patuhan"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"
             android:exported="true"
             android:screenOrientation="portrait" />
     </application>

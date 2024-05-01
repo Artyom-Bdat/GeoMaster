@@ -4,122 +4,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/white"
     tools:context=".start_patuhan">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="670dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491">
 
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="308dp"
-        android:layout_height="127dp"
+        android:layout_width="@dimen/_350sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
         android:text="@string/start_patuhan"
-        android:textSize="37dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_50sdp"
         android:textStyle="bold"
-        android:layout_marginTop="125dp"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/gazanik"
+        android:gravity="center"
+        android:onClick="nazad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_375sdp"
+        android:background="@drawable/gazanik"
+        android:gravity="center"
+        android:onClick="Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дальше"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/zugaheranist"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_260sdp"
+        android:backgroundTint="#BCF3FA"
+        android:onClick="Z_s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
+        app:srcCompat="@drawable/zugaheragit" />
 
-    <Button
-        android:id="@+id/home"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/blue"
-        android:layout_gravity="center"
-        android:layout_marginTop="120dp"
-        android:text="Назад"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/sexan"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_261sdp"
+        android:backgroundTint="#BCF3FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sexan" />
+
+    <ImageView
+        android:id="@+id/qvadrat_qvadrat"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_190sdp"
+        android:backgroundTint="#BCF3FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/qarakusi_button" />
+
+    <ImageView
+        android:id="@+id/erankyun"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_190sdp"
+        android:backgroundTint="#BCF3FA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
+        app:srcCompat="@drawable/erankyun" />
 
-        <Button
-            android:id="@+id/dale"
-            android:layout_width="125dp"
-            android:layout_height="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:backgroundTint="@color/blue"
-            android:layout_gravity="center"
-            android:layout_marginTop="170dp"
-            android:text="Дальше"
-            android:onClick="Click"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-             />
-
-
-
-        <ImageView
-            android:id="@+id/zugaheranist"
-            android:layout_width="85dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#BCF3FA"
-            android:layout_marginTop="320dp"
-            android:layout_marginLeft="100dp"
-            app:srcCompat="@drawable/zugaheragit" />
-
-        <ImageView
-            android:id="@+id/sexan"
-            android:layout_width="85dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#BCF3FA"
-            android:layout_marginTop="320dp"
-            android:layout_marginLeft="180dp"
-            app:srcCompat="@drawable/sexan" />
-
-        <ImageView
-            android:id="@+id/qvadrat_qvadrat"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="65dp"
-            android:backgroundTint="#BCF3FA"
-            android:layout_marginTop="250dp"
-            app:srcCompat="@drawable/qarakusi_button" />
-
-        <ImageView
-            android:id="@+id/erankyun"
-            android:layout_width="80dp"
-            android:layout_height="90dp"
-            android:backgroundTint="#BCF3FA"
-            android:layout_marginTop="240dp"
-            android:layout_marginStart="140dp"
-            app:srcCompat="@drawable/erankyun" />
-
-        <ImageView
-            android:id="@+id/klor"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#BCF3FA"
-            android:layout_marginTop="250dp"
-            android:layout_marginStart="220dp"
-            app:srcCompat="@drawable/klor_1" />
-
-
-
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/klor"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_190sdp"
+        android:backgroundTint="#BCF3FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/klor_1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

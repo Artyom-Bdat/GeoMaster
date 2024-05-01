@@ -4,97 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/white"
     tools:context=".modelner3D">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="670dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/_350sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/start_patuhan"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_50sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_375sdp"
+        android:background="@drawable/gazanik"
+        android:gravity="center"
+        android:onClick="nazad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="308dp"
-            android:layout_height="127dp"
-            android:text="@string/start_patuhan"
-            android:textSize="37dp"
-            android:textStyle="bold"
-            android:layout_marginTop="125dp"
-            android:layout_marginLeft="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.201" />
-
-        <Button
-            android:id="@+id/home"
-            android:layout_width="125dp"
-            android:layout_height="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:backgroundTint="@color/blue"
-            android:layout_gravity="center"
-            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Назад"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:onClick="nazad"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.942" />
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
 
 
+    </LinearLayout>
 
-        <ImageView
-            android:id="@+id/qvadrat_qvadrat"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:backgroundTint="#BCF3FA"
-            android:layout_marginTop="250dp"
-            android:layout_marginStart="140dp"
-            android:onClick="Burg"
-            app:srcCompat="@drawable/piromidka" />
+    <ImageView
+        android:id="@+id/qvadrat_qvadrat"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_230sdp"
+        android:backgroundTint="#BCF3FA"
+        android:onClick="Burg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/piromidka" />
 
+    <ImageView
+        android:id="@+id/qarakusu_paragit"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_230sdp"
+        android:backgroundTint="@color/backgraunds"
+        android:onClick="zugaheranist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zugaheranist" />
 
-        <ImageView
-            android:id="@+id/qarakusu_paragit"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="65dp"
-            android:onClick="zugaheranist"
-            android:backgroundTint="@color/backgraunds"
-            android:layout_marginTop="250dp"
-            app:srcCompat="@drawable/zugaheranist" />
-
-        <ImageView
-            android:id="@+id/qarakusu_nerqnadzig"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:backgroundTint="@color/backgraunds"
-            android:layout_marginTop="250dp"
-            android:onClick="gund"
-            android:layout_marginStart="215dp"
-            app:srcCompat="@drawable/gund"/>
-
-
-
-
-
-
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/qarakusu_nerqnadzig"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_230sdp"
+        android:backgroundTint="@color/backgraunds"
+        android:onClick="gund"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gund" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

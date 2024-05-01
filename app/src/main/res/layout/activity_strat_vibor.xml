@@ -1,94 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/white"
     tools:context=".strat_vibor">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
-        android:onClick="Click"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11">
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height= "@dimen/_122sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/uzor_vibor_2"
+        />
 
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Обучающие задачи"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:layout_gravity="center"
-            />
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/uzor_vibor_1" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent= "true"
+        android:orientation="vertical">
 
-
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#BCF3FA"
-        android:onClick="Click_online"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Многопользовательский режим"
-            android:textAlignment="center"
-            android:textSize="29dp"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:clickable="true"
+            android:background="@drawable/gazanik"
+            android:gravity="center"
+            android:onClick="Click"
+            >
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Обучающие задачи"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_30sdp"
+                android:textStyle="bold" />
 
-    </androidx.cardview.widget.CardView>
+        </LinearLayout>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
-        android:onClick="Click_up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849"
-        android:layout_marginTop="50dp"
-        >
+        <LinearLayout
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:clickable="true"
+            android:background="@drawable/gazanik"
+            android:gravity="center"
+            android:onClick="Click_online"
+            >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Экзаменационный режим"
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:layout_gravity="center"
-            />
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height= "wrap_content"
+                android:layout_gravity="center"
+                android:text="Онлайн режим"
+                android:textColor="@color/blue"
+                android:textAlignment="center"
+                android:textSize="@dimen/_29sdp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:clickable="true"
+            android:background="@drawable/gazanik"
+            android:gravity="center"
+            android:onClick="Click_up">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Экзаменационный режим"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 
-    </androidx.cardview.widget.CardView>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

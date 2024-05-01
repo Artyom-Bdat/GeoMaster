@@ -4,78 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
-    tools:context=".start_patuhan">
-
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="670dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491">
-
+    android:background="@color/white"
+    tools:context=".qarankyun_1">
 
 
     <TextView
-        android:layout_width="316dp"
-        android:layout_height="129dp"
-        android:text="@string/start_patuhan_standart"
-        android:textSize="38dp"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="30dp"
-        />
-
-    <Button
-        android:id="@+id/satrt_patuhan_button"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_300sdp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/blue"
-        android:text="назад"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-         />
+        android:layout_marginTop="@dimen/_70sdp"
+        android:text="@string/start_patuhan_standart"
+        android:textAlignment="center"
+        android:textSize="@dimen/_39sdp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_375sdp"
+        android:background="@drawable/gazanik"
+        android:gravity="center"
+        android:onClick="nazad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/qarakusu_paragit"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="65dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:onClick="Q_P"
+        android:layout_marginTop="@dimen/_220sdp"
         android:backgroundTint="@color/backgraunds"
-        android:layout_marginTop="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/paragit_qarakusi" />
 
     <ImageView
         android:id="@+id/qarakusu_makeres_2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:onClick="Q_M"
+        android:layout_marginTop="@dimen/_220sdp"
         android:backgroundTint="@color/backgraunds"
-        android:layout_marginTop="250dp"
-        android:layout_marginStart="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/makeres_qarakusi" />
 
     <ImageView
         android:id="@+id/qarakusu_nerqnadzig"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:onClick="Q_N"
+        android:layout_marginTop="@dimen/_220sdp"
         android:backgroundTint="@color/backgraunds"
-        android:layout_marginTop="250dp"
-        android:layout_marginStart="215dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/qarakusu_nerqnadzig" />
-
-
-</androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

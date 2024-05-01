@@ -10,15 +10,21 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
 
 import www.sanju.motiontoast.MotionToast;
@@ -29,7 +35,7 @@ public class sing_in extends AppCompatActivity {
     EditText editTextEmail, editTextPassword;
     Button login_btn;
     FirebaseAuth mAuth;
-    Button singin_buton;
+    TextView singin_buton;
     ProgressBar progressBar;
 
 
@@ -88,7 +94,6 @@ public class sing_in extends AppCompatActivity {
                             MotionToast.LONG_DURATION,
                             ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
                     return;
-
                 }
 
                 if (TextUtils.isEmpty(password)) {
@@ -101,13 +106,11 @@ public class sing_in extends AppCompatActivity {
                             MotionToast.LONG_DURATION,
                             ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
                     return;
-
                 }
 
+                // Добавьте сюда ваш обработчик onComplete
                 mAuth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-
-
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
@@ -131,7 +134,39 @@ public class sing_in extends AppCompatActivity {
                                         progressBar.setVisibility(View.INVISIBLE);
                                         MotionToast.Companion.createColorToast(sing_in.this,
                                                 "Ошибка!",
-                                                "Не получилось зайти в аккаунт!",
+                                                "Ваш аккаунт не подтвержден. Пожалуйста, проверьте свою почту и подтвердите аккаунт.",
+                                                MotionToastStyle.ERROR,
+                                                MotionToast.GRAVITY_BOTTOM,
+                                                MotionToast.LONG_DURATION,
+                                                ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                                    }
+                                } else {
+                                    login_btn.setVisibility(View.VISIBLE);
+                                    progressBar.setVisibility(View.INVISIBLE);
+                                    Exception exception = task.getException();
+                                    if (exception instanceof FirebaseAuthInvalidUserException) {
+                                        // Пользователь с таким email не существует
+                                        MotionToast.Companion.createColorToast(sing_in.this,
+                                                "Ошибка!",
+                                                "Пользователь с таким email не существует.",
+                                                MotionToastStyle.ERROR,
+                                                MotionToast.GRAVITY_BOTTOM,
+                                                MotionToast.LONG_DURATION,
+                                                ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                                    } else if (exception instanceof FirebaseAuthInvalidCredentialsException) {
+                                        // Неправильный email или пароль
+                                        MotionToast.Companion.createColorToast(sing_in.this,
+                                                "Ошибка!",
+                                                "Неправильный email или пароль.",
+                                                MotionToastStyle.ERROR,
+                                                MotionToast.GRAVITY_BOTTOM,
+                                                MotionToast.LONG_DURATION,
+                                                ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                                    } else {
+                                        // Обработка других ошибок
+                                        MotionToast.Companion.createColorToast(sing_in.this,
+                                                "Ошибка!",
+                                                "Произошла ошибка. Пожалуйста, попробуйте снова.",
                                                 MotionToastStyle.ERROR,
                                                 MotionToast.GRAVITY_BOTTOM,
                                                 MotionToast.LONG_DURATION,
@@ -144,7 +179,8 @@ public class sing_in extends AppCompatActivity {
         });
     }
 
-            @Override
+
+        @Override
             public void onBackPressed() {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(sing_in.this);
                 alertDialog.setTitle("Выход с приложения");

@@ -2,13 +2,14 @@ package com.example.tyomo_prodaqshn;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class erankyun_start_patuhan extends AppCompatActivity {
-    Button satrt_patuhan_button;
+
     ImageView erankyun_paragit;
     ImageView erankyun_makeres;
     ImageView erankyun_gradus;
@@ -19,12 +20,7 @@ public class erankyun_start_patuhan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_erankyun_start_patuhan);
-        satrt_patuhan_button = findViewById(R.id.satrt_patuhan_button);
-        satrt_patuhan_button.setOnClickListener(v -> {
-            Intent intent = new Intent(erankyun_start_patuhan.this, start_patuhan.class);
-            startActivity(intent);
-            overridePendingTransition(0, 0);
-        });
+
 
         erankyun_paragit= findViewById(R.id.erankyun_paragit);
         erankyun_paragit.setOnClickListener(v -> {
@@ -71,4 +67,9 @@ public class erankyun_start_patuhan extends AppCompatActivity {
     }
 
 
+    public void nazad(View view) {
+        Intent intent = new Intent(erankyun_start_patuhan.this, start_patuhan.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
 }

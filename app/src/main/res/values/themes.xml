@@ -2,8 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Tyomo_Prodaqshn" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/blue</item>
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->m>
+
     </style>
 
 
@@ -12,12 +11,22 @@
 
     <style name="Base.Theme.Tyomo_Prodaqshn1" parent="Theme.Material3.Light.NoActionBar">
         <item name="android:statusBarColor">@color/blue</item>
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->m>
+
+
     </style>
 
+    <style name="Theme.Tyomo_Prodaqshn.TransparentActionBar" parent="Base.Theme.Tyomo_Prodaqshn">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
     <style name="Theme.Tyomo_Prodaqshn.NoActionBar">
-        <item name="windowActionBar">false</item>
+        <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
     </style>
 

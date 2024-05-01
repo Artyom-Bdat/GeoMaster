@@ -20,11 +20,6 @@ public class Zugaheranist_m3 extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
-    public void Nazad(View view) {
-        Intent intent = new Intent(Zugaheranist_m3.this,modelner3D.class);
-        startActivity(intent);
-        overridePendingTransition(0, 0);
-    }
     @Override
     public void onBackPressed(){
         Intent intent = new Intent(Zugaheranist_m3.this,modelner3D.class);
@@ -40,6 +35,12 @@ public class Zugaheranist_m3 extends AppCompatActivity {
 
     public void Slriv(View view) {
         Intent intent = new Intent(Zugaheranist_m3.this,Zug_Slriv.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+
+    public void nazad(View view) {
+        Intent intent = new Intent(Zugaheranist_m3.this,modelner3D.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }

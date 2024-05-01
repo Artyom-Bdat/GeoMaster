@@ -14,12 +14,6 @@ public class klor_diametr_radius extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_klor_diametr_radius);
 
-        View satrt_patuhan_button = findViewById(R.id.satrt_patuhan_button);
-        satrt_patuhan_button.setOnClickListener(v -> {
-            Intent intent = new Intent(klor_diametr_radius.this, start_patuhan.class);
-            startActivity(intent);
-            overridePendingTransition(0, 0);
-        });
 
         ImageView Klor_radius;
         Klor_radius = findViewById(R.id.klor_radiust);
@@ -70,4 +64,9 @@ public class klor_diametr_radius extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
+    public void nazad(View view) {
+        Intent intent = new Intent(klor_diametr_radius.this, start_patuhan.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
 }

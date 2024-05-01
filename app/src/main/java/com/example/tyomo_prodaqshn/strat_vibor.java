@@ -28,14 +28,15 @@ public class strat_vibor extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
-    public void Click_up(View view) {
-        Intent intent = new Intent(strat_vibor.this, very_easy.class);
+
+    public void Click_online(View view) {
+        Intent intent = new Intent(strat_vibor.this, online.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
 
-    public void Click_online(View view) {
-        Intent intent = new Intent(strat_vibor.this, online.class);
+    public void Click_up(View view) {
+        Intent intent = new Intent(strat_vibor.this, very_easy.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }

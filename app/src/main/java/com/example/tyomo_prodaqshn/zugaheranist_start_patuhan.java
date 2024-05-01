@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -17,29 +18,6 @@ public class zugaheranist_start_patuhan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zugaheranist_start_patuhan);
-
-       zugaheranist_paragit = findViewById(R.id.zugaheranist_paragit);
-       zugaheranist_paragit.setOnClickListener(v -> {
-            Intent intent = new Intent(zugaheranist_start_patuhan.this, zugaheranist_paragit_act.class);
-            startActivity(intent);
-           overridePendingTransition(0, 0);
-
-        });
-
-        zugaheranist_makeres = findViewById(R.id.zugaheranist_makeres);
-        zugaheranist_makeres.setOnClickListener(v -> {
-            Intent intent = new Intent(zugaheranist_start_patuhan.this, zugaheranist_makeres_act.class);
-            startActivity(intent);
-            overridePendingTransition(0, 0);
-
-        });
-
-        satrt_patuhan_button = findViewById(R.id.satrt_patuhan_button);
-        satrt_patuhan_button.setOnClickListener(v -> {
-            Intent intent = new Intent(zugaheranist_start_patuhan.this, start_patuhan.class);
-            startActivity(intent);
-            overridePendingTransition(0, 0);
-        });
     }
 
     @Override
@@ -49,4 +27,21 @@ public class zugaheranist_start_patuhan extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
+    public void z_p(View view) {
+        Intent intent = new Intent(zugaheranist_start_patuhan.this, zugaheranist_paragit_act.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+
+    public void z_s(View view) {
+        Intent intent = new Intent(zugaheranist_start_patuhan.this, zugaheranist_makeres_act.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+
+    public void nazad(View view) {
+        Intent intent = new Intent(zugaheranist_start_patuhan.this, start_patuhan.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
 }

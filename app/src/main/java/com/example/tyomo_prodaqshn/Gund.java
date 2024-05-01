@@ -32,4 +32,5 @@ public class Gund extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
+
 }

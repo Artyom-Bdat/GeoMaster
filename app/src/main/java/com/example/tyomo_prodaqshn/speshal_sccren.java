@@ -1,7 +1,6 @@
 package com.example.tyomo_prodaqshn;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -12,6 +11,8 @@ public class speshal_sccren extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speshal_sccren);
 
+
+
         Thread thread = new Thread() {
             @Override
             public void run() {
@@ -20,18 +21,16 @@ public class speshal_sccren extends AppCompatActivity {
                     startActivity(new Intent(speshal_sccren.this, sign_up.class));
                     overridePendingTransition(0, 0);
                     finish();
-
-                }catch(Exception e) {
-
+                } catch(Exception e) {
+                    e.printStackTrace();
                 }
             }
-        }; thread.start();
+        };
+        thread.start();
     }
 
     @Override
     public void onBackPressed(){
-        //Intent intent = new Intent(shrjanagci_erkarutyun.this, klor_diametr_radius.class);
-        //startActivity(intent);
+        // Ваш код здесь
     }
-
 }

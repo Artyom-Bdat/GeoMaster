@@ -4,82 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/white"
     tools:context=".burg_makeres">
 
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="670dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:text="@string/start_patuhan_standart"
+        android:textAlignment="center"
+        android:textSize="@dimen/_39sdp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491">
+        app:layout_constraintTop_toTopOf="parent" />
 
-
+    <LinearLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_375sdp"
+        android:background="@drawable/gazanik"
+        android:gravity="center"
+        android:onClick="nazad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="316dp"
-            android:layout_height="129dp"
-            android:text="@string/start_patuhan_standart"
-            android:textSize="38dp"
-            android:textStyle="bold"
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="30dp"
-            />
-
-        <Button
-            android:id="@+id/satrt_patuhan_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:backgroundTint="@color/blue"
-            android:text="назад"
-            android:onClick="Nazad"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"
-            />
-
-        <ImageView
-            android:id="@+id/qarakusu_paragit"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="65dp"
-            android:backgroundTint="@color/backgraunds"
-            android:layout_marginTop="250dp"
-            android:onClick="Paragit"
-            app:srcCompat="@drawable/piramid_p" />
-
-        <ImageView
-            android:id="@+id/qarakusu_makeres_2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:backgroundTint="@color/backgraunds"
-            android:layout_marginTop="250dp"
-            android:layout_marginStart="140dp"
-            android:onClick="Makeres_koxmnayin"
-            app:srcCompat="@drawable/piramidka_sbok" />
-
-        <ImageView
-            android:id="@+id/qarakusu_nerqnadzig"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:backgroundTint="@color/backgraunds"
-            android:layout_marginTop="250dp"
-            android:layout_marginStart="215dp"
-            android:onClick="Slriv"
-            app:srcCompat="@drawable/piamidka_spolni" />
+            android:text="Назад"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
 
 
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
+    <ImageView
+        android:id="@+id/qarakusu_paragit"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_230sdp"
+        android:backgroundTint="@color/backgraunds"
+        android:onClick="Paragit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/piramid_p" />
+
+    <ImageView
+        android:id="@+id/qarakusu_makeres_2"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_230sdp"
+        android:backgroundTint="@color/backgraunds"
+        android:onClick="Makeres_koxmnayin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/piramidka_sbok" />
+
+    <ImageView
+        android:id="@+id/qarakusu_nerqnadzig"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_230sdp"
+        android:backgroundTint="@color/backgraunds"
+        android:onClick="Slriv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/piamidka_spolni" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

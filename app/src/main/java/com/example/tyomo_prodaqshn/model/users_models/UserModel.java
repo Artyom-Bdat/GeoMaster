@@ -3,12 +3,18 @@ package com.example.tyomo_prodaqshn.model.users_models;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.media.MediaPlayer;
+import android.os.CountDownTimer;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.example.tyomo_prodaqshn.Activity3;
+import com.example.tyomo_prodaqshn.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -21,11 +27,14 @@ import www.sanju.motiontoast.MotionToastStyle;
 
 public class UserModel {
 
+
+
     private String name;
     private int bal;
     private String Emil;
     private String Password;
     static FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
 
 
     public UserModel() {
@@ -75,6 +84,8 @@ public class UserModel {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         DocumentReference userDocument = db.collection("users").document(mAuth.getCurrentUser().getUid());
 
+
+
         // Увеличиваем значение "bal" на 1 в Firestore
         userDocument.update("bal", FieldValue.increment(1))
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -93,4 +104,9 @@ public class UserModel {
                     }
                 });
     }
+
+
+
+
 }
+

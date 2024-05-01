@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class start_patuhan extends AppCompatActivity {
-    Button home;
+
     ImageView qvadrat;
     ImageView klor;
     ImageView erankyun;
@@ -21,13 +21,6 @@ public class start_patuhan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_patuhan);
-        home = findViewById(R.id.home);
-        home.setOnClickListener(v -> {
-            Intent intent = new Intent(start_patuhan.this, strat_vibor.class);
-            startActivity(intent);
-            overridePendingTransition(0, 0);
-        });
-
 
 
         qvadrat = findViewById(R.id.qvadrat_qvadrat);
@@ -83,4 +76,12 @@ public class start_patuhan extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
+
+    public void nazad(View view) {
+        Intent intent = new Intent(start_patuhan.this, strat_vibor.class);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
+    }
+
+
 }

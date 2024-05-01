@@ -33,14 +33,14 @@ public class burg_makeres extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
-    public void Nazad(View view) {
-        Intent intent = new Intent(burg_makeres.this,modelner3D.class);
+    public void Slriv(View view) {
+        Intent intent = new Intent(burg_makeres.this,Burg_Slriv.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }
 
-    public void Slriv(View view) {
-        Intent intent = new Intent(burg_makeres.this,Burg_Slriv.class);
+    public void nazad(View view) {
+        Intent intent = new Intent(burg_makeres.this,modelner3D.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
     }

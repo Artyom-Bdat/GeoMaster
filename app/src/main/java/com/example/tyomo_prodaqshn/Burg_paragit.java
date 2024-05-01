@@ -24,6 +24,7 @@ public class Burg_paragit extends AppCompatActivity {
         patasxan_inpat = findViewById(R.id.patasxan_inpat);
         patasxan_inpat.setOnClickListener(v -> {
             if(patasxaner.modek_3d[0].equals(patasxan_inpat.getText().toString())){
+
                 MotionToast.Companion.createColorToast(this,
                         "Ответ правелен!",
                         "Молодец!",

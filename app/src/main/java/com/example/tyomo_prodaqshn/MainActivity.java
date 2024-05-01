@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.tyomo_prodaqshn.lider_bord.Lideri;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     TextView TextView;
     TextView name;
     FirebaseAuth auth;
-    Button logout;
+    LinearLayout logout;
     FirebaseUser User;
     public static String  nameText;
     public static FirebaseAuth mAuth;
@@ -42,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button start = findViewById(R.id.start);
+        LinearLayout start = findViewById(R.id.start);
+
+
 
         View.OnClickListener oclstart = new View.OnClickListener() {
             @Override
@@ -59,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.logout);
-        TextView = findViewById(R.id.user_detalis);
         name = findViewById(R.id.user_name);
         bali = findViewById(R.id.bali);
         User = auth.getCurrentUser();
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else {
-            TextView.setText(User.getEmail());
+
 
         }
 
@@ -148,5 +150,25 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Lideri.class);
         startActivity(intent);
         overridePendingTransition(0, 0);
+    }
+
+    public void vixod(View view) {
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
+        alertDialog.setTitle("Выход с приложения");
+        alertDialog.setMessage("Вы хотите выйти из приложения?");
+        alertDialog.setPositiveButton("Да",new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+            }
+        });
+        alertDialog.setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
     }
 }

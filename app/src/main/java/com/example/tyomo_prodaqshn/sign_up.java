@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -30,7 +31,7 @@ public class sign_up extends AppCompatActivity {
     EditText editTextEmail, editTextPassword, editTextName;
     Button register_btn;
     FirebaseAuth mAuth;
-    Button sing_up;
+    TextView sing_up;
     UserModel userModel;
     ProgressBar progressBar;
     public void onStart() {
