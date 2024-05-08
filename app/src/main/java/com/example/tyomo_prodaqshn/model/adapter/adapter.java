@@ -43,14 +43,25 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
         Collections.sort(list, new Comparator<UserModel>() {
             @Override
             public int compare(UserModel user1, UserModel user2) {
+                if(!user1.getTestBal().isEmpty() || user2.getTestBal().isEmpty()){
+                    return Double.compare(user2.getTestBal().size(), user1.getTestBal().size());
+                }
+                else {
+                    return Double.compare(0,0);
+                }
                 // Сравниваем балансы в обратном порядке (от большего к меньшему)
-                return Double.compare(user2.getBal(), user1.getBal());
+
             }
         });
 
         // Устанавливаем данные в элементы ViewHolder
         holder.Name.setText(list.get(position).getName());
-        holder.bal.setText("" + list.get(position).getBal());
+        if(list.get(position).getTestBal() != null){
+            holder.bal.setText("" + list.get(position).getTestBal().size());
+        }else {
+            holder.bal.setText("0");
+        }
+
         holder.number.setText(Integer.toString(position + 1) + ")");
     }
 

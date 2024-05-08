@@ -97,13 +97,24 @@ public class Lideri extends AppCompatActivity {
                     Toast.makeText(this, "null", Toast.LENGTH_SHORT).show();
                 }
 
+                if(model.getTestBal() == null){
+                    list.add(new UserModel(
+                            snapshot.getString("name"),
+                            (int)Math.round(snapshot.getDouble("bal")),
+                            model.getEmil(),
+                            model.getPassword()
 
-                list.add(new UserModel(
-                        snapshot.getString("name"),
-                        (int)Math.round(snapshot.getDouble("bal")),
-                        model.getEmil(),
-                        model.getPassword()
-                ));
+                    ));
+                }else{
+                    list.add(new UserModel(
+                            snapshot.getString("name"),
+                            (int)Math.round(snapshot.getDouble("bal")),
+                            model.getEmil(),
+                            model.getPassword(),
+                            model.getTestBal()
+                    ));
+                }
+
             }
             // Обновляем адаптер после того, как все данные добавлены
             adapter.notifyDataSetChanged();

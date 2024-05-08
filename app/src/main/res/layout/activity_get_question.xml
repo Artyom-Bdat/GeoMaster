@@ -128,7 +128,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.366"
-        app:srcCompat="@drawable/baseline_drive_file_rename_outline_24" />
+        />
 
     <ImageView
         android:id="@+id/imageView35"
@@ -140,7 +140,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.475"
-        app:srcCompat="@drawable/baseline_edit_square_24" />
+       />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

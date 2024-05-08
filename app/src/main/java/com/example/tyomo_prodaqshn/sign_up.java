@@ -23,6 +23,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
 
@@ -130,10 +133,12 @@ public class sign_up extends AppCompatActivity {
 
                                 FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
                                 if (task.isSuccessful()) {
+                                    List<String> list = new ArrayList<>();
                                     userModel.setBal(0);
                                     userModel.setEmil(email);
                                     userModel.setPassword(password);
                                     userModel.setName(name);
+                                    userModel.setTestBal(list);
 
                                         FirebaseFirestore.getInstance().collection("users").document(mAuth.getCurrentUser().getUid()).set(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
                                             @Override
@@ -186,7 +191,7 @@ public class sign_up extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed(){
+    public void  onBackPressed(){
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(sign_up.this);
         alertDialog.setTitle("Выход с приложения");
         alertDialog.setMessage("Вы хотите выйти из приложения?");

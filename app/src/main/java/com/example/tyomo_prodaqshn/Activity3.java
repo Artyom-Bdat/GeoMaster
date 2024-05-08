@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -48,33 +49,7 @@ public class Activity3 extends AppCompatActivity   {
                startActivity(intent);
                overridePendingTransition(0, 0);
 
-               FirebaseFirestore db = FirebaseFirestore.getInstance();
-               DocumentReference userDocument = db.collection("users").document(mAuth.getCurrentUser().getUid());
-
-               // Увеличиваем значение "bal" на 1 в Firestore
-               userDocument.update("bal", FieldValue.increment(1))
-                       .addOnSuccessListener(new OnSuccessListener<Void>() {
-                           @Override
-                           public void onSuccess(Void aVoid) {
-                               // Успешно увеличили значение "bal" на 1
-                               MotionToast.Companion.createColorToast(Activity3.this,
-                                       "Успех!",
-                                       "Значение 'bal' увеличено на 1",
-                                       MotionToastStyle.SUCCESS,
-                                       MotionToast.GRAVITY_BOTTOM,
-                                       MotionToast.LONG_DURATION,
-                                       ResourcesCompat.getFont(Activity3.this, www.sanju.motiontoast.R.font.helveticabold));
-                           }
-                       })
-                       .addOnFailureListener(new OnFailureListener() {
-                           @Override
-                           public void onFailure(@NonNull Exception e) {
-                               // Ошибка при обновлении значения "bal"
-                               Log.e("Firestore", "Ошибка при обновлении 'bal': " + e.getMessage());
-                               // Можно показать уведомление об ошибке
-                           }
-                       });
-
+               UserModel.baler(Activity3.this);
 
            }else{
                MotionToast.Companion.createColorToast(this,
