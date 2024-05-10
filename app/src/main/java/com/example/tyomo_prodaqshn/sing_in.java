@@ -42,15 +42,18 @@ public class sing_in extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intent);
-            overridePendingTransition(0, 0);
-            finish();
+            if (!currentUser.isEmailVerified()) {
+            } else {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                finish();
+            }
         }
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

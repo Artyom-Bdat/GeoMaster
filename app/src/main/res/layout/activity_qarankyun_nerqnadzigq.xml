@@ -4,144 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/white"
     tools:context=".qarankyun_nerqnadzigq">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="670dp"
-        android:backgroundTint="#BCF3FA"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <TextView
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/qarakusu_nerqnadziq_1"
+        android:textSize="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_230sdp"
+        android:text="@string/qarakusu_nerqnadziq_2"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_21sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_270sdp"
+        android:text="@string/qarakusu_nerqnadziq_3"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_21sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491">
+        app:layout_constraintVertical_bias="0.041" />
 
 
-        <TextView
-            android:layout_width="325dp"
-            android:layout_height="179dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/qarakusu_nerqnadziq_1"
-            android:textSize="25dp"
-            android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="@dimen/_142sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_240sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/qarakusi_nerqnadziq_abc" />
 
-            />
-
-
-        <TextView
-            android:layout_width="325dp"
-            android:layout_height="179dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="220dp"
-            android:text="@string/qarakusu_nerqnadziq_2"
-            android:textColor="@color/blue"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.416" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_360sdp"
+        android:background="@drawable/gazanik"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879">
 
         <TextView
-            android:layout_width="171dp"
-            android:layout_height="72dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="260dp"
-            android:text="@string/qarakusu_nerqnadziq_3"
-            android:textColor="@color/blue"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.245"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.421" />
-
-        <TextView
-            android:layout_width="333dp"
-            android:layout_height="140dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="350dp"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="wrap_content"
             android:text="@string/qarakusu_nerqnadziq_4"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.622" />
-
-        <TextView
-            android:layout_width="31dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="35dp"
-            android:text="@string/armat"
-            android:layout_marginTop="525dp"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/patasxan_dioganal"
-            app:layout_constraintHorizontal_bias="1.0"
-
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.894" />
-
-        <EditText
-            android:id="@+id/patasxan_dioganal"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:background="@drawable/edit_text_rounder_corner"
-            android:backgroundTint="@color/blue"
-            android:inputType="number"
             android:textAlignment="center"
-            android:textColor="@color/white"
-            android:layout_marginTop="525dp"
-            android:layout_marginLeft="60dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.898" />
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_19sdp"
+            android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/microfon"
-            android:layout_width="43dp"
-            android:layout_height="50dp"
-            android:onClick="Click"
-            android:layout_marginTop="525dp"
-            android:layout_marginLeft="260dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/patasxan_dioganal"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.893"
-            app:srcCompat="@drawable/miqrafon_off" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="142dp"
-            android:layout_height="127dp"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="210dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/armat"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.894" />
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.855"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.336"
-            app:srcCompat="@drawable/qarakusi_nerqnadziq_abc" />
+            <EditText
+                android:id="@+id/patasxan_dioganal"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/edit_text_rounder_corner"
+                android:backgroundTint="@color/blue"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/microfon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:onClick="Click"
+                app:srcCompat="@drawable/miqrafon_off" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

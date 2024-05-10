@@ -102,7 +102,7 @@ public class erankyun_gradus_gumar extends AppCompatActivity {
     }
 
     private void startTimer(final View view) {
-        new CountDownTimer(16000, 1000) {
+        new CountDownTimer(17000, 1000) {
             public void onTick(long millisUntilFinished) {
                 // Здесь можно добавить обновление интерфейса, например, отображение оставшегося времени
             }

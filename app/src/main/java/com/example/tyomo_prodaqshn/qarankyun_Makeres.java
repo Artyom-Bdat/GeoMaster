@@ -39,6 +39,7 @@ public class qarankyun_Makeres extends AppCompatActivity {
                         MotionToast.LONG_DURATION,
                         ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold));
 
+                UserModel.baler(qarankyun_Makeres.this);
                 Intent intent = new Intent(qarankyun_Makeres.this, qarankyun_1.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);

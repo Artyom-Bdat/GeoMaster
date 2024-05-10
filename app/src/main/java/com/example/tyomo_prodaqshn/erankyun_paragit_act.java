@@ -101,7 +101,7 @@ public class erankyun_paragit_act extends AppCompatActivity {
     }
 
     private void startTimer(final View view) {
-        new CountDownTimer(3000, 1000) {
+        new CountDownTimer(4000, 1000) {
             public void onTick(long millisUntilFinished) {
                 // Здесь можно добавить обновление интерфейса, например, отображение оставшегося времени
             }

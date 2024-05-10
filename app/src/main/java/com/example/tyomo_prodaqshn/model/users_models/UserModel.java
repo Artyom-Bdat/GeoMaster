@@ -116,7 +116,6 @@ public class UserModel {
     }
 
     public  static void baler(Context context){
-        Toast.makeText(context, "HI", Toast.LENGTH_SHORT).show();
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         DocumentReference userDocument = db.collection("users").document(mAuth.getCurrentUser().getUid());
@@ -136,7 +135,7 @@ public class UserModel {
                            userDocument.update(testBal).addOnSuccessListener(new OnSuccessListener<Void>() {
                                @Override
                                public void onSuccess(Void unused) {
-                                   Toast.makeText(context, "barev goxer", Toast.LENGTH_SHORT).show();
+
                                }
                            });
 
@@ -149,7 +148,7 @@ public class UserModel {
                         userDocument.update(testBal).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
-                                Toast.makeText(context, "barev goxer", Toast.LENGTH_SHORT).show();
+
                             }
                         });
                     }

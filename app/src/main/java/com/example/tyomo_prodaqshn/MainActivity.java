@@ -22,6 +22,9 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -77,8 +80,17 @@ public class MainActivity extends AppCompatActivity {
                     if (document.exists()) {
                         // Получаем значение поля "bal" из документа
 
-                        bali.setText(Long.toString( document.getLong("bal")));
-                       nameText = document.getString("name");
+                        List<Object> testBalArray = (List<Object>) document.get("testBal");
+                        List<String> newList = new ArrayList<>();
+                        for (Object obj : testBalArray) {
+                            if (obj != null) {
+                                newList.add(obj.toString());
+                            }
+                        }
+                        int listSize = newList.size();
+                        bali.setText(String.valueOf(listSize));
+
+                        nameText = document.getString("name");
                         name.setText(nameText);
                     } else {
                         Log.d("Firestore", "No such document");
