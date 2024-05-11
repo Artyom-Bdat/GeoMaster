@@ -43,7 +43,7 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
         Collections.sort(list, new Comparator<UserModel>() {
             @Override
             public int compare(UserModel user1, UserModel user2) {
-                if(!user1.getTestBal().isEmpty() || user2.getTestBal().isEmpty()){
+                if(user1.getTestBal() != null && user2.getTestBal() != null){
                     return Double.compare(user2.getTestBal().size(), user1.getTestBal().size());
                 }
                 else {

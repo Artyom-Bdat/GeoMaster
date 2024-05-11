@@ -28,14 +28,12 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_400sdp"
         android:layout_below="@+id/Title"
+        android:layout_marginTop="@dimen/_60sdp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginEnd="@dimen/_15sdp"
-        android:layout_marginBottom="@dimen/_116sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:layout_width="@dimen/_60sdp"
