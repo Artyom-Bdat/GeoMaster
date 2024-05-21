@@ -34,7 +34,7 @@ public class QuestionReciclerViewAdapter extends RecyclerView.Adapter<QuestionRe
     @NonNull
     @Override
     public UserModelViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.question_recicler_view, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.question_item, parent, false);
         return new UserModelViewHolder(view);
     }
 

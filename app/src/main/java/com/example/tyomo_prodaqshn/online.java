@@ -77,13 +77,13 @@ public class online extends AppCompatActivity {
     public void get_question(View view) {
         Intent intent = new Intent(online.this, get_question.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     @Override
     public void onBackPressed(){
         Intent intent = new Intent(online.this, strat_vibor.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }

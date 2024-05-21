@@ -43,7 +43,7 @@ public class diametr_radius_act extends AppCompatActivity {
                 Intent intent = new Intent(diametr_radius_act.this, klor_diametr_radius.class);
                 startActivity(intent);
                 UserModel.baler(diametr_radius_act.this);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }else{
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -69,7 +69,7 @@ public class diametr_radius_act extends AppCompatActivity {
         }
         Intent intent = new Intent(diametr_radius_act.this, klor_diametr_radius.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     private boolean isPlaying = false; // Переменная для отслеживания состояния воспроизведения

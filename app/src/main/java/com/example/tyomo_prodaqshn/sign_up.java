@@ -43,7 +43,7 @@ public class sign_up extends AppCompatActivity {
         if(currentUser != null){
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
-            overridePendingTransition(0, 0);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             finish();
         }
     }
@@ -68,7 +68,7 @@ public class sign_up extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), sing_in.class);
                 startActivity(intent);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 finish();
             }
 
@@ -155,13 +155,13 @@ public class sign_up extends AppCompatActivity {
                                                         ResourcesCompat.getFont(sign_up.this, www.sanju.motiontoast.R.font.helveticabold));
 
 
-                                                    overridePendingTransition(0, 0);
+
                                                     register_btn.setVisibility(View.VISIBLE);
                                                     progressBar.setVisibility(View.INVISIBLE);
                                                     firebaseAuth.getCurrentUser().sendEmailVerification();
                                                     firebaseAuth.signOut();
                                                     startActivity(new Intent(sign_up.this, sing_in.class));
-
+                                                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                                                     finish();
                                                 }
                                             }

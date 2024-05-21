@@ -24,9 +24,9 @@
             android:id="@+id/textView9"
             android:layout_width="@dimen/_250sdp"
             android:layout_height="@dimen/_150sdp"
-            android:text="Вычислит периметр пиромидки если сторона основания равна 6,а боковая старана 7."
+            android:text="Вычислите периметр пирамидки, если сторона основания равна 6, а боковая сторона — 7."
             android:textAlignment="center"
-            android:textSize="@dimen/_25sdp"
+            android:textSize="@dimen/_24sdp"
             android:textStyle="bold"
             />
 
@@ -41,6 +41,7 @@
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/_20sdp"
                 android:background="@drawable/edit_text_rounder_corner"
                 android:backgroundTint="@color/blue"
                 android:inputType="numberDecimal"
@@ -74,7 +75,7 @@
         android:id="@+id/imageView37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_440sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"

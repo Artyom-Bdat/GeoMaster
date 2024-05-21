@@ -17,31 +17,31 @@ public class burg_makeres extends AppCompatActivity {
     public void Paragit(View view) {
         Intent intent = new Intent(burg_makeres.this,   Burg_paragit.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void Makeres_koxmnayin(View view) {
         Intent intent = new Intent(burg_makeres.this,   Burg_Skoxmnayin.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     @Override
     public void onBackPressed(){
         Intent intent = new Intent(burg_makeres.this,modelner3D.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void Slriv(View view) {
         Intent intent = new Intent(burg_makeres.this,Burg_Slriv.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void nazad(View view) {
         Intent intent = new Intent(burg_makeres.this,modelner3D.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }

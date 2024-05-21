@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/_115sdp"
+        android:layout_marginTop="@dimen/_80sdp"
         android:text="Регистрация"
         android:textColor="@color/blue"
         android:textSize="@dimen/_35sdp"
@@ -36,7 +36,7 @@
         android:id="@+id/Name"
         android:layout_width="@dimen/_230sdp"
         android:layout_height="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_190sdp"
+        android:layout_marginTop="@dimen/_140sdp"
         android:ems="20"
         android:paddingLeft="@dimen/_30sdp"
         android:hint="Имя"
@@ -92,20 +92,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
+
     <Button
         android:id="@+id/register_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Зарегистрироваться-->"
+        android:text="Зарегистрироваться"
         android:textSize="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_15sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintHorizontal_bias="0.712"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password1" />
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -138,18 +138,18 @@
         android:layout_width="@dimen/_24sdp"
         android:layout_height="@dimen/_24sdp"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_5sdp"
         android:visibility="gone"
+        android:layout_marginTop="@dimen/_7sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/register_btn" />
 
     <ImageView
         android:id="@+id/imageView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_255sdp"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_200sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
@@ -159,9 +159,9 @@
 
     <ImageView
         android:id="@+id/imageView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_200sdp"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_145sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
@@ -173,7 +173,7 @@
         android:id="@+id/imageView28df"
         android:layout_width="@dimen/_22sdp"
         android:layout_height="@dimen/_26sdp"
-        android:layout_marginTop="@dimen/_300sdp"
+        android:layout_marginTop="@dimen/_305sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
@@ -185,7 +185,7 @@
         android:id="@+id/imageView28"
         android:layout_width="@dimen/_22sdp"
         android:layout_height="@dimen/_26sdp"
-        android:layout_marginTop="@dimen/_355sdp"
+        android:layout_marginTop="@dimen/_251sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"

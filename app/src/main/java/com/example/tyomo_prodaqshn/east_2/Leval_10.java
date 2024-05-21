@@ -37,7 +37,7 @@ public class Leval_10 extends AppCompatActivity {
                 Intent intent = new Intent(Leval_10.this, easy.class);
                 startActivity(intent);
                 UserModel.baler(Leval_10.this);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             } else {
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -54,12 +54,12 @@ public class Leval_10 extends AppCompatActivity {
     public void onBackPressed() {
         Intent intent = new Intent(Leval_10.this, easy.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void info(View view) {
         Intent intent = new Intent(Leval_10.this, qarankyun_Makeres.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }

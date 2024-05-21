@@ -36,27 +36,27 @@ public class very_easy extends AppCompatActivity {
         switch (randomLevel) {
             case 1:
                 intent = new Intent(very_easy.this, Leval_1.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 2:
                 intent = new Intent(very_easy.this, Leval_2.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 3:
                 intent = new Intent(very_easy.this, Leval_3.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 4:
                 intent = new Intent(very_easy.this, Leval_4.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 5:
                 intent = new Intent(very_easy.this, Leval_5.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 6:
                 intent = new Intent(very_easy.this, Leval_6.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             default:
                 // Handle unexpected case
@@ -71,18 +71,18 @@ public class very_easy extends AppCompatActivity {
     public void onBackPressed() {
         Intent intent = new Intent(very_easy.this, strat_vibor.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void kvibru(View view) {
         Intent intent = new Intent(very_easy.this, strat_vibor.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void dale(View view) {
         Intent intent = new Intent(very_easy.this, easy.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);;
     }
 }

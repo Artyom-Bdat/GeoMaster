@@ -18,8 +18,8 @@ public class speshal_sccren extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(3000);
-                    startActivity(new Intent(speshal_sccren.this, sign_up.class));
-                    overridePendingTransition(0, 0);
+                    startActivity(new Intent(speshal_sccren.this, sing_in.class));
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     finish();
                 } catch(Exception e) {
                     e.printStackTrace();

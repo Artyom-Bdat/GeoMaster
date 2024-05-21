@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.tyomo_prodaqshn.R;
 import com.example.tyomo_prodaqshn.east_2.easy;
 import com.example.tyomo_prodaqshn.hard.hard;
+import com.example.tyomo_prodaqshn.strat_vibor;
 
 import java.util.Random;
 
@@ -31,27 +32,27 @@ public class madium extends AppCompatActivity {
         switch (randomLevel) {
             case 1:
                 intent = new Intent(madium.this, Leval_13.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 2:
                 intent = new Intent(madium.this, Leval_14.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 3:
                 intent = new Intent(madium.this, Leval_15.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 4:
                 intent = new Intent(madium.this, Leval_16.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 5:
                 intent = new Intent(madium.this, Leval_17.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 6:
                 intent = new Intent(madium.this, Leval_18.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             default:
                 // Handle unexpected case
@@ -65,17 +66,23 @@ public class madium extends AppCompatActivity {
     public void nazad(View view) {
         Intent intent = new Intent(madium.this, easy.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(madium.this, easy.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
     public void dale(View view) {
         Intent intent = new Intent(madium.this, hard.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
+    public void kvibru(View view) {
+        Intent intent = new Intent(madium.this, strat_vibor.class);
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }

@@ -18,19 +18,19 @@ public class Gund extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(Gund.this,modelner3D.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void nazad(View view) {
         Intent intent = new Intent(Gund.this,modelner3D.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void Gund(View view) {
         Intent intent = new Intent(Gund.this,Gund_s.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".east_2.easy">
+    tools:context=".hard.hard">
 
     <ImageView
         android:id="@+id/imageView29"
@@ -19,6 +19,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:onClick="kvibru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/domik" />
+
     <ImageView
         android:id="@+id/imageView30"
         android:layout_width="wrap_content"
@@ -26,16 +36,17 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:src="@drawable/uzor_vibor_1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_390sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_90sdp"
         android:text="Уровень:Трудний"
         android:textAlignment="center"
         android:textColor="@color/blue"
@@ -50,7 +61,7 @@
         android:id="@+id/linearLayout3"
         android:layout_width="@dimen/_170sdp"
         android:layout_height="@dimen/_150sdp"
-        android:layout_marginTop="@dimen/_190sdp"
+        android:layout_marginTop="@dimen/_120sdp"
         android:background="@drawable/gazanik"
         android:gravity="center"
         android:onClick="RandomLevel"
@@ -70,14 +81,14 @@
 
     </LinearLayout>
 
+
     <LinearLayout
-        android:id="@+id/linearLayout4"
         android:layout_width="@dimen/_200sdp"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginTop="@dimen/_30sdp"
         android:background="@drawable/gazanik"
         android:gravity="center"
-        android:onClick="dale"
+        android:onClick="nazad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
@@ -85,30 +96,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Далеe"
-            android:textSize="@dimen/_25sdp"
-            android:textColor="@color/blue"
-            android:textStyle="bold"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_25sdp"
-        android:background="@drawable/gazanik"
-        android:gravity="center"
-        android:onClick="nazad"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Назад"
-            android:textSize="@dimen/_25sdp"
             android:textColor="@color/blue"
+            android:textSize="@dimen/_25sdp"
             android:textStyle="bold" />
 
 

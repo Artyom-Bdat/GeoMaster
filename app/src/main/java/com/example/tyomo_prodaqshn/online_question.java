@@ -43,8 +43,7 @@ public class online_question extends AppCompatActivity {
                         ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold));
                 Intent intent = new Intent(online_question.this, online.class);
                 startActivity(intent);
-                UserModel.baler(online_question.this);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
             }else{
                 MotionToast.Companion.createColorToast(this,
@@ -62,7 +61,7 @@ public class online_question extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(online_question.this, online.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 }

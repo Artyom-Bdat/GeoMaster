@@ -27,32 +27,30 @@ public class qarankyun_1 extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(qarankyun_1.this, start_patuhan.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void nazad(View view) {
         Intent intent = new Intent(qarankyun_1.this, start_patuhan.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void Q_P(View view) {
         Intent intent = new Intent(qarankyun_1.this, Activity3.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void Q_M(View view) {
-        Intent intent = new Intent(qarankyun_1.this, qarankyun_Makeres
-
-                .class);
+        Intent intent = new Intent(qarankyun_1.this, qarankyun_Makeres.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void Q_N(View view) {
         Intent intent = new Intent(qarankyun_1.this, qarankyun_nerqnadzigq.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }

@@ -17,7 +17,7 @@ public class info extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(info.this, MainActivity.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 }

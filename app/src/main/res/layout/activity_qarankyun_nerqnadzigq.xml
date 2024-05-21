@@ -12,7 +12,7 @@
         android:layout_width="@dimen/_280sdp"
         android:layout_height="wrap_content"
         android:text="@string/qarakusu_nerqnadziq_1"
-        android:textSize="@dimen/_24sdp"
+        android:textSize="@dimen/_21sdp"
         android:layout_marginTop="@dimen/_30sdp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -23,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_230sdp"
+        android:layout_marginTop="@dimen/_190sdp"
         android:text="@string/qarakusu_nerqnadziq_2"
         android:textColor="@color/blue"
         android:textSize="@dimen/_21sdp"
@@ -36,7 +36,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_270sdp"
+        android:layout_marginTop="@dimen/_240sdp"
         android:text="@string/qarakusu_nerqnadziq_3"
         android:textColor="@color/blue"
         android:textSize="@dimen/_21sdp"
@@ -52,17 +52,22 @@
         android:id="@+id/imageView6"
         android:layout_width="@dimen/_142sdp"
         android:layout_height="@dimen/_100sdp"
-        android:layout_marginTop="@dimen/_240sdp"
+        android:layout_marginTop="@dimen/_200sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.993"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/qarakusi_nerqnadziq_abc" />
 
+
+
+
+
+
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_180sdp"
-        android:layout_marginTop="@dimen/_360sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_320sdp"
         android:background="@drawable/gazanik"
         android:orientation="vertical"
         android:padding="@dimen/_8sdp"
@@ -78,26 +83,15 @@
             android:text="@string/qarakusu_nerqnadziq_4"
             android:textAlignment="center"
             android:layout_marginTop="@dimen/_10sdp"
-            android:textSize="@dimen/_19sdp"
+            android:textSize="@dimen/_15sdp"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_height="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_35sdp"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/armat"
-                android:textSize="@dimen/_25sdp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.894" />
 
             <EditText
                 android:id="@+id/patasxan_dioganal"
@@ -112,9 +106,8 @@
 
             <ImageView
                 android:id="@+id/microfon"
-                android:layout_width="@dimen/_30sdp"
+                android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_35sdp"
-                android:layout_marginTop="@dimen/_3sdp"
                 android:onClick="Click"
                 app:srcCompat="@drawable/miqrafon_off" />
         </LinearLayout>

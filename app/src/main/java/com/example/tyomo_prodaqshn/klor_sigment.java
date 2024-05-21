@@ -39,7 +39,7 @@ public class klor_sigment extends AppCompatActivity {
                 Intent intent = new Intent(klor_sigment.this, klor_diametr_radius.class);
                 startActivity(intent);
                 UserModel.baler(klor_sigment.this);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }else{
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -62,7 +62,7 @@ public class klor_sigment extends AppCompatActivity {
         }
         Intent intent = new Intent(klor_sigment.this, klor_diametr_radius.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     private boolean isPlaying = false; // Переменная для отслеживания состояния воспроизведения

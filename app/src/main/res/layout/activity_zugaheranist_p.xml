@@ -13,7 +13,7 @@
         android:layout_width="@dimen/_280sdp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_30sdp"
-        android:text="Периметр параллелепипеда будет равна сумме всех его сторон."
+        android:text="Периметр параллелепипеда будет равен сумме всех его сторон."
         android:textAlignment="center"
         android:textSize="@dimen/_23sdp"
         android:textStyle="bold"
@@ -26,9 +26,9 @@
         android:layout_width="@dimen/_280sdp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_140sdp"
-        android:text="Например сторана оснаваня будет равна 6,а висота 7."
+        android:text="Например, сторона основания будет равна 6, а высота 7."
         android:textAlignment="center"
-        android:textSize="@dimen/_20sdp"
+        android:textSize="@dimen/_19sdp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
@@ -61,60 +61,48 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/zug_67" />
 
+
+
     <TextView
         android:layout_width="@dimen/_170sdp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="332dp"
-        android:text="Умножаем на 8 потому что у нас 2 основание."
+        android:layout_marginTop="@dimen/_250sdp"
+        android:text="Эти палочки означают, что они равны."
         android:textAlignment="center"
         android:textColor="@color/blue"
-        android:textSize="@dimen/_14sdp"
+        android:textSize="@dimen/_15sdp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="@dimen/_275sdp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_310sdp"
-        android:text="Эти палочки означают что они равны."
-        android:textAlignment="center"
-        android:textColor="@color/blue"
-        android:textSize="@dimen/_20sdp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_180sdp"
-        android:layout_marginTop="480dp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_320sdp"
         android:background="@drawable/gazanik"
         android:orientation="vertical"
         android:padding="@dimen/_8sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879">
 
         <TextView
             android:layout_width="@dimen/_260sdp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:text="Задание:Вичеслить периметр параллелепипеда если сторона его основания равна 5 а висота равна 7."
+            android:text="Задание:Вычислить периметр параллелепипеда, если сторона его основания равна 5, а высота равна 7."
             android:textAlignment="center"
-            android:textSize="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_35sdp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/_25sdp"
             android:orientation="horizontal">
 
             <EditText

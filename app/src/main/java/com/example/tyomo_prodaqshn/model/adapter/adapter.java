@@ -62,7 +62,7 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
             holder.bal.setText("0");
         }
 
-        holder.number.setText(Integer.toString(position + 1) + ")");
+        holder.number.setText(Integer.toString(position + 4));
     }
 
     @Override
@@ -82,7 +82,7 @@ public class adapter extends RecyclerView.Adapter<adapter.UserHolder> {
             super(itemView);
             Name = itemView.findViewById(R.id.Name);
             bal = itemView.findViewById(R.id.bal);
-            uzor = itemView.findViewById(R.id.uzor);
+
             number = itemView.findViewById(R.id.number);
 
 

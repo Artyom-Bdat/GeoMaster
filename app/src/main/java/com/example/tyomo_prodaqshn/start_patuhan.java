@@ -27,7 +27,7 @@ public class start_patuhan extends AppCompatActivity {
         qvadrat.setOnClickListener(v -> {
             Intent intent = new Intent(start_patuhan.this, qarankyun_1.class);
             startActivity(intent);
-            overridePendingTransition(0, 0);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
         });
 
@@ -35,7 +35,7 @@ public class start_patuhan extends AppCompatActivity {
         klor.setOnClickListener(v -> {
             Intent intent = new Intent(start_patuhan.this, klor_diametr_radius.class);
             startActivity(intent);
-            overridePendingTransition(0, 0);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
         });
 
@@ -43,7 +43,7 @@ public class start_patuhan extends AppCompatActivity {
         erankyun.setOnClickListener(v -> {
             Intent intent = new Intent(start_patuhan.this, erankyun_start_patuhan.class);
             startActivity(intent);
-            overridePendingTransition(0, 0);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
         });
 
@@ -51,7 +51,7 @@ public class start_patuhan extends AppCompatActivity {
         sexan.setOnClickListener(v -> {
             Intent intent = new Intent(start_patuhan.this, sexan_start_patuhan.class);
             startActivity(intent);
-            overridePendingTransition(0, 0);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
         });
 
@@ -59,7 +59,7 @@ public class start_patuhan extends AppCompatActivity {
         zugaheranist.setOnClickListener(v -> {
             Intent intent = new Intent(start_patuhan.this, zugaheranist_start_patuhan.class);
             startActivity(intent);
-            overridePendingTransition(0, 0);
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
         });
     }
@@ -68,19 +68,19 @@ public class start_patuhan extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(start_patuhan.this, strat_vibor.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void Click(View view) {
         Intent intent = new Intent(start_patuhan.this, modelner3D.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void nazad(View view) {
         Intent intent = new Intent(start_patuhan.this, strat_vibor.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 

@@ -15,8 +15,8 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/_20sdp"
-        android:textColor="@color/blue"
         android:text="Задание от пользователей"
+        android:textColor="@color/blue"
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,26 +25,27 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_400sdp"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_390sdp"
         android:layout_below="@+id/Title"
-        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_50sdp"
         android:layout_gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="@dimen/_60sdp"
-        android:layout_height="@dimen/_60sdp"
+    <Button
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_35sdp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_430sdp"
+        android:backgroundTint="@color/blue"
+        android:text="Создать вопрос"
+        android:textSize="@dimen/_20sdp"
         android:onClick="get_question"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_playlist_add_circle_24" />
 
 

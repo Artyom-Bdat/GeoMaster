@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="@dimen/_300sdp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:text="@string/start_patuhan_standart"
         android:textAlignment="center"
         android:textSize="@dimen/_39sdp"
@@ -25,7 +25,7 @@
     <LinearLayout
         android:layout_width="@dimen/_200sdp"
         android:layout_height="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_375sdp"
+        android:layout_marginTop="@dimen/_340sdp"
         android:background="@drawable/gazanik"
         android:gravity="center"
         android:onClick="nazad"

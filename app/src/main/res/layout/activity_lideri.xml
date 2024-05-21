@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/_20sdp"
+
         android:textColor="@color/blue"
         android:text="Топ Лидеров"
         android:textSize="@dimen/_24sdp"
@@ -24,19 +24,121 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+<RelativeLayout
+    android:layout_width="@dimen/_210sdp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="@dimen/_35sdp"
+    android:layout_centerHorizontal="true">
+
+
+    <RelativeLayout
+        android:id="@+id/Top1"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/lideri"
+        android:backgroundTint="#FFB800"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_40sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Top2"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/Top1"
+        android:background="@drawable/lideri"
+        android:backgroundTint="#8800FF"
+        android:layout_marginTop="@dimen/_20sdp"
+
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_40sdp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:id="@+id/Name2"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Top3"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/Top1"
+        android:background="@drawable/lideri"
+        android:backgroundTint="#FF0048"
+        android:layout_marginTop="@dimen/_40sdp"
+
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:id="@+id/Name3"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+</RelativeLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/_325sdp"
         android:layout_below="@+id/Title"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="@dimen/_100sdp"
+        />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
 

@@ -39,7 +39,7 @@ public class Leavl_19 extends AppCompatActivity {
                 Intent intent = new Intent(Leavl_19.this, hard.class);
                 startActivity(intent);
                 UserModel.baler(Leavl_19.this);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
             }else{
                 MotionToast.Companion.createColorToast(this,
@@ -57,13 +57,13 @@ public class Leavl_19 extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(Leavl_19.this, hard.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     public void info(View view) {
         Intent intent = new Intent(Leavl_19.this, burg_makeres.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 }

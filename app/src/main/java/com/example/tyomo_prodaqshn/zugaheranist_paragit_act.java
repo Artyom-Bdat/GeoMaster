@@ -39,7 +39,7 @@ public class zugaheranist_paragit_act extends AppCompatActivity {
                 Intent intent = new Intent(zugaheranist_paragit_act.this, zugaheranist_start_patuhan.class);
                 startActivity(intent);
                 UserModel.baler(zugaheranist_paragit_act.this);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             } else {
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -62,7 +62,7 @@ public class zugaheranist_paragit_act extends AppCompatActivity {
         }
         Intent intent = new Intent(zugaheranist_paragit_act.this, zugaheranist_start_patuhan.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     private boolean isPlaying = false; // Переменная для отслеживания состояния воспроизведения

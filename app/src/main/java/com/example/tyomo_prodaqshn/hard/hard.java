@@ -14,7 +14,8 @@ import com.example.tyomo_prodaqshn.madium.Leval_16;
 import com.example.tyomo_prodaqshn.madium.Leval_17;
 import com.example.tyomo_prodaqshn.madium.Leval_18;
 import com.example.tyomo_prodaqshn.madium.madium;
-import com.example.tyomo_prodaqshn.very_hard.very_hard;
+import com.example.tyomo_prodaqshn.strat_vibor;
+
 
 import java.util.Random;
 
@@ -28,19 +29,15 @@ public class hard extends AppCompatActivity {
     public void nazad(View view) {
         Intent intent = new Intent(hard.this, madium.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(hard.this, madium.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
-    public void dale(View view) {
-        Intent intent = new Intent(hard.this, very_hard.class);
-        startActivity(intent);
-        overridePendingTransition(0, 0);
-    }
+
 
     public void RandomLevel(View view) {
         // Создаем объект Random для генерации случайных чисел
@@ -53,27 +50,27 @@ public class hard extends AppCompatActivity {
         switch (randomLevel) {
             case 1:
                 intent = new Intent(hard.this, Leavl_19.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 2:
                 intent = new Intent(hard.this, Leval_20.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 3:
                 intent = new Intent(hard.this, Leval_21.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 4:
                 intent = new Intent(hard.this, Leval_22.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 5:
                 intent = new Intent(hard.this, Leval_23.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case 6:
                 intent = new Intent(hard.this, Leval_24.class);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             default:
                 // Handle unexpected case
@@ -82,5 +79,11 @@ public class hard extends AppCompatActivity {
 
         // Запускаем уровень
         startActivity(intent);
+    }
+
+    public void kvibru(View view) {
+        Intent intent = new Intent(hard.this, strat_vibor.class);
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 }

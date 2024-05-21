@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="@string/klor_sigment_2"
         android:layout_marginTop="@dimen/_70sdp"
-        android:textSize="25dp"
+        android:textSize="@dimen/_18sdp"
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
         android:layout_marginTop="@dimen/_140sdp"
         android:textColor="@color/blue"
         android:text="@string/klor_sigment_4"
-        android:textSize="@dimen/_25sdp"
+        android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,10 +49,10 @@
     <TextView
         android:layout_width="@dimen/_250sdp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_165sdp"
         android:text="@string/klor_sigment_3"
         android:textColor="@color/blue"
-        android:textSize="@dimen/_20sdp"
+        android:textSize="@dimen/_18sdp"
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,10 +60,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
+
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_180sdp"
-        android:layout_marginTop="@dimen/_360sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_320sdp"
         android:background="@drawable/gazanik"
         android:orientation="vertical"
         android:padding="@dimen/_8sdp"
@@ -79,7 +82,7 @@
             android:text="@string/klor_sigment_5"
             android:textAlignment="center"
             android:layout_marginTop="@dimen/_10sdp"
-            android:textSize="@dimen/_18sdp"
+            android:textSize="@dimen/_15sdp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -114,8 +117,8 @@
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="@dimen/_131sdp"
-        android:layout_height="@dimen/_110sdp"
-        android:layout_marginTop="@dimen/_240sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_220sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

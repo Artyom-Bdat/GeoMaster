@@ -6,5 +6,5 @@ public class patasxaner {                                                       
     public static String []  modek_3d = new String[]{"54","110","140","68","220","290","100"};
     public static String []  Hesht = new String[]{"22.30","9.18","18","50","27.25","16.10"};
     public static String []  madium = new String[]{"247","12","55.25","45","24","125"};
-    public static String []  hard = new String[]{"39","60","56","161","130","240"};
+    public static String []  hard = new String[]{"39","60","56","161","56","240"};
 }

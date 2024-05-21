@@ -18,6 +18,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tyomo_prodaqshn.model.users_models.UserModel;
 import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -26,6 +27,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import www.sanju.motiontoast.MotionToast;
 import www.sanju.motiontoast.MotionToastStyle;
@@ -37,6 +41,7 @@ public class sing_in extends AppCompatActivity {
     FirebaseAuth mAuth;
     TextView singin_buton;
     ProgressBar progressBar;
+    private UserModel userModel;
 
 
     @Override
@@ -48,7 +53,7 @@ public class sing_in extends AppCompatActivity {
             } else {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 finish();
             }
         }
@@ -67,16 +72,7 @@ public class sing_in extends AppCompatActivity {
         singin_buton = findViewById(R.id.reg);
         progressBar = findViewById(R.id.progress_bar);
 
-        singin_buton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), sign_up.class);
-                startActivity(intent);
-                overridePendingTransition(0, 0);
-                finish();
-            }
 
-        });
 
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,7 +126,7 @@ public class sing_in extends AppCompatActivity {
                                                 ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                         startActivity(intent);
-                                        overridePendingTransition(0, 0);
+                                        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                                         finish();
                                     } else {
                                         login_btn.setVisibility(View.VISIBLE);
@@ -203,5 +199,86 @@ public class sing_in extends AppCompatActivity {
                 alertDialog.show();
 
             }
+
+    public void test(View view) {
+        String email = "sictst1@gmail.com"; // Replace with your predefined email
+        String password = "123456789";
+
+        login_btn.setVisibility(View.INVISIBLE);
+        progressBar.setVisibility(View.VISIBLE);
+
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+                        if (task.isSuccessful()) {
+                            if (firebaseAuth.getCurrentUser().isEmailVerified()) {
+                                login_btn.setVisibility(View.VISIBLE);
+                                progressBar.setVisibility(View.INVISIBLE);
+                                MotionToast.Companion.createColorToast(sing_in.this,
+                                        "Отлично!",
+                                        "Вы вошли в аккаунт!",
+                                        MotionToastStyle.SUCCESS,
+                                        MotionToast.GRAVITY_BOTTOM,
+                                        MotionToast.LONG_DURATION,
+                                        ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                startActivity(intent);
+                                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                                finish();
+                            } else {
+                                login_btn.setVisibility(View.VISIBLE);
+                                progressBar.setVisibility(View.INVISIBLE);
+                                MotionToast.Companion.createColorToast(sing_in.this,
+                                        "Ошибка!",
+                                        "Ваш аккаунт не подтвержден. Пожалуйста, проверьте свою почту и подтвердите аккаунт.",
+                                        MotionToastStyle.ERROR,
+                                        MotionToast.GRAVITY_BOTTOM,
+                                        MotionToast.LONG_DURATION,
+                                        ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                            }
+                        } else {
+                            login_btn.setVisibility(View.VISIBLE);
+                            progressBar.setVisibility(View.INVISIBLE);
+                            Exception exception = task.getException();
+                            if (exception instanceof FirebaseAuthInvalidUserException) {
+                                MotionToast.Companion.createColorToast(sing_in.this,
+                                        "Ошибка!",
+                                        "Пользователь с таким email не существует.",
+                                        MotionToastStyle.ERROR,
+                                        MotionToast.GRAVITY_BOTTOM,
+                                        MotionToast.LONG_DURATION,
+                                        ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                            } else if (exception instanceof FirebaseAuthInvalidCredentialsException) {
+                                MotionToast.Companion.createColorToast(sing_in.this,
+                                        "Ошибка!",
+                                        "Неправильный email или пароль.",
+                                        MotionToastStyle.ERROR,
+                                        MotionToast.GRAVITY_BOTTOM,
+                                        MotionToast.LONG_DURATION,
+                                        ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                            } else {
+                                MotionToast.Companion.createColorToast(sing_in.this,
+                                        "Ошибка!",
+                                        "Произошла ошибка. Пожалуйста, попробуйте снова.",
+                                        MotionToastStyle.ERROR,
+                                        MotionToast.GRAVITY_BOTTOM,
+                                        MotionToast.LONG_DURATION,
+                                        ResourcesCompat.getFont(sing_in.this, www.sanju.motiontoast.R.font.helveticabold));
+                            }
+                        }
+                    }
+                });
+    }
+
+
+
+    public void register(View view) {
+        Intent intent = new Intent(getApplicationContext(), sign_up.class);
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        finish();
+    }
 }
 

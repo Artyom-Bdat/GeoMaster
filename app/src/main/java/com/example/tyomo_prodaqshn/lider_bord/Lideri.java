@@ -21,13 +21,17 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Lideri extends AppCompatActivity {
     private List<UserModel> list;
     private RecyclerView recyclerView;
-    private TextView Title;
+    private TextView Title,top1,top2,top3,name1,name2,name3;
+    int toper;
      com.example.tyomo_prodaqshn.model.adapter.adapter adapter;
+
 
 
 
@@ -37,7 +41,14 @@ public class Lideri extends AppCompatActivity {
         setContentView(R.layout.activity_lideri);
 
         Title = findViewById(R.id.Title);
+
         recyclerView = findViewById(R.id.recyclerView);
+
+        name1 = findViewById(R.id.Name1);
+        name2 = findViewById(R.id.Name2);
+        name3 = findViewById(R.id.Name3);
+
+
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(Lideri.this));
         FirebaseAuth auth = FirebaseAuth.getInstance();
@@ -52,17 +63,12 @@ public class Lideri extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(Lideri.this, MainActivity.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     @SuppressLint("NotifyDataSetChanged")
     private void loadDataFromFirestore() {
         CollectionReference reference = FirebaseFirestore.getInstance().collection("users");
-
-
-
-
-
 
         reference.addSnapshotListener((value, error) -> {
             Log.e("reference updated", "reference");
@@ -71,44 +77,36 @@ public class Lideri extends AppCompatActivity {
                 return;
             }
             if (value == null || value.isEmpty()) {
-                return; // Нет данных в снимке, просто выходим
+                return; // No data in snapshot, just exit
             }
 
-            // Очистить список перед добавлением новых данных
+            // Clear the list before adding new data
             list.clear();
 
-
+            int toper = 0;
 
             for (QueryDocumentSnapshot snapshot : value) {
-
-
                 if (!snapshot.exists()) {
                     continue;
                 }
-                // if( snapshot.getDouble("location latitude") == 0.0){
-                //     Log.e("double111","null");
-                // }
 
-               UserModel model = snapshot.toObject(UserModel.class);
+                UserModel model = snapshot.toObject(UserModel.class);
 
-                //assert geoPoint != null;
-                //Toast.makeText(getContext(), geoPoint.toString(), Toast.LENGTH_SHORT).show();
-                if(snapshot.getString("name") == null){
+                if (snapshot.getString("name") == null) {
                     Toast.makeText(this, "null", Toast.LENGTH_SHORT).show();
                 }
 
-                if(model.getTestBal() == null){
+                if (model.getTestBal() == null) {
                     list.add(new UserModel(
                             snapshot.getString("name"),
-                            (int)Math.round(snapshot.getDouble("bal")),
+                            (int) Math.round(snapshot.getDouble("bal")),
                             model.getEmil(),
                             model.getPassword()
-
                     ));
-                }else{
+                } else {
                     list.add(new UserModel(
                             snapshot.getString("name"),
-                            (int)Math.round(snapshot.getDouble("bal")),
+                            (int) Math.round(snapshot.getDouble("bal")),
                             model.getEmil(),
                             model.getPassword(),
                             model.getTestBal()
@@ -116,12 +114,44 @@ public class Lideri extends AppCompatActivity {
                 }
 
             }
-            // Обновляем адаптер после того, как все данные добавлены
+
+            Collections.sort(list, new Comparator<UserModel>() {
+                @Override
+                public int compare(UserModel user1, UserModel user2) {
+                    if (user1.getTestBal() != null && user2.getTestBal() != null) {
+                        return Double.compare(user2.getTestBal().size(), user1.getTestBal().size());
+                    } else {
+                        return Double.compare(0, 0);
+                    }
+                }
+            });
+
+            // Ensure the list has enough elements before accessing them
+            while (toper < 3 && toper < list.size()) {
+                if (toper == 0) {
+                    if (list.get(toper) != null) {
+                        name1.setText(list.get(toper).getName());
+                    }
+                }
+                if (toper == 1) {
+                    if (list.get(toper) != null) {
+                        name2.setText(list.get(toper).getName());
+                    }
+                }
+                if (toper == 2) {
+                    if (list.get(toper) != null) {
+                        name3.setText(list.get(toper).getName());
+                    }
+                }
+                toper++;
+            }
+
+            // Remove the elements from the list after setting the names
+            if (list.size() > 0) list.subList(0, Math.min(3, list.size())).clear();
+
+            // Update the adapter after all data is added
             adapter.notifyDataSetChanged();
-
-
         });
-
     }
 }
 

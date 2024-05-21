@@ -40,7 +40,7 @@ public class erankyun_gradus_gumar extends AppCompatActivity {
                 Intent intent = new Intent(erankyun_gradus_gumar.this, erankyun_start_patuhan.class);
                 startActivity(intent);
                 UserModel.baler(erankyun_gradus_gumar.this);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }else{
                 MotionToast.Companion.createColorToast(this,
                         "Ответ неправильный!",
@@ -64,7 +64,7 @@ public class erankyun_gradus_gumar extends AppCompatActivity {
         }
         Intent intent = new Intent(erankyun_gradus_gumar.this, erankyun_start_patuhan.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     private boolean isPlaying = false; // Переменная для отслеживания состояния воспроизведения

@@ -122,11 +122,11 @@ public class get_question extends AppCompatActivity {
                                             MotionToast.GRAVITY_BOTTOM,
                                             MotionToast.LONG_DURATION,
                                             ResourcesCompat.getFont(get_question.this, www.sanju.motiontoast.R.font.helveticabold));
-                                    overridePendingTransition(0, 0);
+
 
                                     Intent intent = new Intent(get_question.this, online.class);
                                     startActivity(intent);
-                                    overridePendingTransition(0, 0);
+                                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                                 } else {
                                     // Произошла ошибка при создании документа
                                     get_question.setVisibility(View.VISIBLE);
@@ -150,7 +150,7 @@ public class get_question extends AppCompatActivity {
     public void onBackPressed(){
         Intent intent = new Intent(get_question.this,online.class);
         startActivity(intent);
-        overridePendingTransition(0, 0);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
 }
