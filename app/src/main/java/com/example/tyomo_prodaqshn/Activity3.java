@@ -29,6 +29,7 @@ public class Activity3 extends AppCompatActivity   {
     EditText pastxan_inpat;
 
     private MediaPlayer mediaPlayer;
+    private CountDownTimer countDownTimer;
 
 
     @Override
@@ -97,8 +98,13 @@ public class Activity3 extends AppCompatActivity   {
             mediaPlayer.release();
             mediaPlayer = null;
         }
-    }
 
+        // Отменить таймер при уходе из активности
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+            countDownTimer = null;
+        }
+    }
 
     public void Click(View view) {
         if (mediaPlayer != null && mediaPlayer.isPlaying()) {
@@ -108,6 +114,12 @@ public class Activity3 extends AppCompatActivity   {
             // Обновляем изображение кнопки
             ((ImageView)view).setImageResource(R.drawable.miqrafon_off);
             Log.d("MediaPlayer", "Media player stopped");
+
+            // Отменить текущий таймер
+            if (countDownTimer != null) {
+                countDownTimer.cancel();
+                countDownTimer = null;
+            }
         } else {
             mediaPlayer = MediaPlayer.create(Activity3.this, R.raw.qarakusu_paragit);
             mediaPlayer.start();
@@ -119,7 +131,12 @@ public class Activity3 extends AppCompatActivity   {
     }
 
     private void startTimer(final View view) {
-        new CountDownTimer(23000, 1000) {
+        // Отменить текущий таймер, если он существует
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+
+        countDownTimer = new CountDownTimer(23000, 1000) {
             public void onTick(long millisUntilFinished) {
                 // Здесь можно добавить обновление интерфейса, например, отображение оставшегося времени
             }
@@ -138,11 +155,4 @@ public class Activity3 extends AppCompatActivity   {
             }
         }.start();
     }
-
-
-
-
-
-
-
 }

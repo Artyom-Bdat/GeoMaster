@@ -101,6 +101,7 @@
                 android:layout_height="@dimen/_35sdp"
                 android:background="@drawable/edit_text_rounder_corner"
                 android:backgroundTint="@color/blue"
+                android:textSize="@dimen/_25sdp"
                 android:inputType="numberDecimal"
                 android:textAlignment="center"
                 android:textColor="@color/white" />

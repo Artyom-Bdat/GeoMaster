@@ -20,6 +20,7 @@ import www.sanju.motiontoast.MotionToastStyle;
 public class klor_sigment extends AppCompatActivity {
     EditText patasxan_klor_sigment;
     private MediaPlayer mediaPlayer;
+    private CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +79,13 @@ public class klor_sigment extends AppCompatActivity {
             mediaPlayer.release();
             mediaPlayer = null;
         }
-    }
 
+        // Отменить таймер при уходе из активности
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+            countDownTimer = null;
+        }
+    }
 
     public void Click(View view) {
         if (mediaPlayer != null && mediaPlayer.isPlaying()) {
@@ -89,6 +95,12 @@ public class klor_sigment extends AppCompatActivity {
             // Обновляем изображение кнопки
             ((ImageView)view).setImageResource(R.drawable.miqrafon_off);
             Log.d("MediaPlayer", "Media player stopped");
+
+            // Отменить текущий таймер
+            if (countDownTimer != null) {
+                countDownTimer.cancel();
+                countDownTimer = null;
+            }
         } else {
             mediaPlayer = MediaPlayer.create(klor_sigment.this, R.raw.klor_sigment);
             mediaPlayer.start();
@@ -100,7 +112,12 @@ public class klor_sigment extends AppCompatActivity {
     }
 
     private void startTimer(final View view) {
-        new CountDownTimer(8000, 1000) {
+        // Отменить текущий таймер, если он существует
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+
+        countDownTimer = new CountDownTimer(8000, 1000) {
             public void onTick(long millisUntilFinished) {
                 // Здесь можно добавить обновление интерфейса, например, отображение оставшегося времени
             }
@@ -119,5 +136,4 @@ public class klor_sigment extends AppCompatActivity {
             }
         }.start();
     }
-
 }

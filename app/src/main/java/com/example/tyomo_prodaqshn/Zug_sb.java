@@ -21,6 +21,7 @@ public class Zug_sb extends AppCompatActivity {
 
     EditText patasxan_inpat;
     private MediaPlayer mediaPlayer;
+    private CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,8 +81,13 @@ public class Zug_sb extends AppCompatActivity {
             mediaPlayer.release();
             mediaPlayer = null;
         }
-    }
 
+        // Отменить таймер при уходе из активности
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+            countDownTimer = null;
+        }
+    }
 
     public void Click(View view) {
         if (mediaPlayer != null && mediaPlayer.isPlaying()) {
@@ -91,6 +97,12 @@ public class Zug_sb extends AppCompatActivity {
             // Обновляем изображение кнопки
             ((ImageView)view).setImageResource(R.drawable.miqrafon_off);
             Log.d("MediaPlayer", "Media player stopped");
+
+            // Отменить текущий таймер
+            if (countDownTimer != null) {
+                countDownTimer.cancel();
+                countDownTimer = null;
+            }
         } else {
             mediaPlayer = MediaPlayer.create(Zug_sb.this, R.raw.zug_sbok);
             mediaPlayer.start();
@@ -102,7 +114,12 @@ public class Zug_sb extends AppCompatActivity {
     }
 
     private void startTimer(final View view) {
-        new CountDownTimer(10000, 1000) {
+        // Отменить текущий таймер, если он существует
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+
+        countDownTimer = new CountDownTimer(10000, 1000) {
             public void onTick(long millisUntilFinished) {
                 // Здесь можно добавить обновление интерфейса, например, отображение оставшегося времени
             }

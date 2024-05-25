@@ -21,6 +21,7 @@ public class zugaheranist_paragit_act extends AppCompatActivity {
     EditText zugaheranist_paragit_;
     
     private MediaPlayer mediaPlayer;
+    private CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +79,13 @@ public class zugaheranist_paragit_act extends AppCompatActivity {
             mediaPlayer.release();
             mediaPlayer = null;
         }
-    }
 
+        // Отменить таймер при уходе из активности
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+            countDownTimer = null;
+        }
+    }
 
     public void Click(View view) {
         if (mediaPlayer != null && mediaPlayer.isPlaying()) {
@@ -89,6 +95,12 @@ public class zugaheranist_paragit_act extends AppCompatActivity {
             // Обновляем изображение кнопки
             ((ImageView)view).setImageResource(R.drawable.miqrafon_off);
             Log.d("MediaPlayer", "Media player stopped");
+
+            // Отменить текущий таймер
+            if (countDownTimer != null) {
+                countDownTimer.cancel();
+                countDownTimer = null;
+            }
         } else {
             mediaPlayer = MediaPlayer.create(zugaheranist_paragit_act.this, R.raw.zugaheraagit_paraagit);
             mediaPlayer.start();
@@ -100,7 +112,12 @@ public class zugaheranist_paragit_act extends AppCompatActivity {
     }
 
     private void startTimer(final View view) {
-        new CountDownTimer(13000, 1000) {
+        // Отменить текущий таймер, если он существует
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+
+        countDownTimer = new CountDownTimer(13000, 1000) {
             public void onTick(long millisUntilFinished) {
                 // Здесь можно добавить обновление интерфейса, например, отображение оставшегося времени
             }

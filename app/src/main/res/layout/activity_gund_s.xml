@@ -66,6 +66,7 @@
                 android:id="@+id/patasxan_inpat"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_35sdp"
+                android:textSize="@dimen/_25sdp"
                 android:background="@drawable/edit_text_rounder_corner"
                 android:backgroundTint="@color/blue"
                 android:inputType="numberDecimal"

@@ -95,6 +95,7 @@
                 android:background="@drawable/edit_text_rounder_corner"
                 android:backgroundTint="@color/blue"
                 android:inputType="numberDecimal"
+                android:textSize="@dimen/_25sdp"
                 android:textAlignment="center"
                 android:textColor="@color/white" />
 

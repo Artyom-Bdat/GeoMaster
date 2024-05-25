@@ -26,7 +26,7 @@
             android:layout_width="@dimen/_105sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:inputType="number"
             android:text="2"
             android:textAlignment="center"
