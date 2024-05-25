@@ -95,6 +95,14 @@
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:text="@string/pi"/>
+
             <EditText
                 android:id="@+id/patasxan_Makeres_klor"
                 android:layout_width="@dimen/_150sdp"

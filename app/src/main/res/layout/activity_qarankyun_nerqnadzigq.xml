@@ -93,6 +93,14 @@
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_21sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="@string/armat"/>
+
             <EditText
                 android:id="@+id/patasxan_dioganal"
                 android:layout_width="@dimen/_150sdp"
