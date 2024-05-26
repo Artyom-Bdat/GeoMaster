@@ -42,11 +42,12 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_3sdp"
                 android:textSize="@dimen/_20sdp"
-                android:background="@drawable/edit_text_rounder_corner"
-                android:backgroundTint="@color/blue"
+                android:background="@drawable/gazanik"
+                android:hint="ответ"
+                android:textColorHint="@color/blue"
                 android:inputType="numberDecimal"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/blue" />
 
             <ImageView
                 android:id="@+id/info"

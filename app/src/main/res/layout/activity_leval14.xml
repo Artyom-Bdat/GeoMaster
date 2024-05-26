@@ -49,19 +49,20 @@
                 android:id="@+id/patasxan_Level_1"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_30sdp"
-                android:background="@drawable/edit_text_rounder_corner"
-                android:backgroundTint="@color/blue"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/gazanik"
+                android:hint="ответ"
+                android:textColorHint="@color/blue"
                 android:textSize="@dimen/_20sdp"
                 android:inputType="numberDecimal"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/blue" />
 
             <ImageView
                 android:id="@+id/info"
                 android:layout_width="@dimen/_30sdp"
                 android:layout_height="@dimen/_40sdp"
                 android:onClick="info"
-                android:layout_marginTop="@dimen/_2sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
                 app:srcCompat="@drawable/info_button" />
 

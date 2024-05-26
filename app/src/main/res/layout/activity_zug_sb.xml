@@ -25,7 +25,7 @@
         android:layout_width="@dimen/_280sdp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_135sdp"
-        android:text="Формула будет такова:     S (бок) = P(ocн) * h."
+        android:text="Формула будет такова:              S (бок) = P(ocн) * h."
         android:textAlignment="center"
         android:textColor="@color/blue"
         android:textSize="@dimen/_19sdp"
@@ -85,11 +85,12 @@
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_35sdp"
                 android:textSize="@dimen/_25sdp"
-                android:background="@drawable/edit_text_rounder_corner"
-                android:backgroundTint="@color/blue"
+                android:background="@drawable/gazanik"
+                android:hint="ответ"
+                android:textColorHint="@color/blue"
                 android:inputType="numberDecimal"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/blue" />
 
 
             <ImageView
