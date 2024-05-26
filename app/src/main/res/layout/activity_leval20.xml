@@ -24,9 +24,9 @@
             android:id="@+id/textView9"
             android:layout_width="@dimen/_250sdp"
             android:layout_height="@dimen/_150sdp"
-            android:text="Вычислить периметр параллелепипеда, если сторона основания равна 3, а боковая сторона 9."
+            android:text="Вычислить периметр прямоугольного параллелепипеда, если сторона основания равна 3, а боковая сторона 9."
             android:textAlignment="center"
-            android:textSize="@dimen/_24sdp"
+            android:textSize="@dimen/_21sdp"
             android:textStyle="bold"
             />
 

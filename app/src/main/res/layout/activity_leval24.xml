@@ -24,9 +24,9 @@
             android:id="@+id/textView9"
             android:layout_width="@dimen/_250sdp"
             android:layout_height="@dimen/_150sdp"
-            android:text="Вычислить S(бок) пирамиды, если сторона основания равна 4, а h = 15."
+            android:text="Вычислить S(бок) четырехугольной пирамиды, если сторона основания равна 4, а h = 15."
             android:textAlignment="center"
-            android:textSize="@dimen/_25sdp"
+            android:textSize="@dimen/_23sdp"
             android:textStyle="bold"
             />
 

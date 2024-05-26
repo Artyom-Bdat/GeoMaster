@@ -35,7 +35,7 @@
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
             android:textSize="@dimen/_7sdp"
-            android:text="Пишитье сперва Диаметр потом Радиус,Между ними нужно поставить точку."
+            android:text="Пишите сперва Радиуси потом Диаметр,Между ними нужно поставить точку."
             />
 
         <LinearLayout

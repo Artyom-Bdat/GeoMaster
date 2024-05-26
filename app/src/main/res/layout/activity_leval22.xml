@@ -24,9 +24,9 @@
             android:id="@+id/textView9"
             android:layout_width="@dimen/_250sdp"
             android:layout_height="@dimen/_150sdp"
-            android:text="Вычислить площадь пирамиды, если известны сторона основания 7, боковая сторона 10 и высота 8."
+            android:text="Вычислить площадь четырехугольной пирамиды, если известны сторона основания 7, h = 8."
             android:textAlignment="center"
-            android:textSize="@dimen/_21sdp"
+            android:textSize="@dimen/_23sdp"
             android:textStyle="bold"
             />
 

@@ -24,7 +24,7 @@
         android:id="@+id/textView9"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_150sdp"
-        android:text=" Вычислить диаметр круга. Длина круга равна 36."
+        android:text=" Вычислить диаметр круга. Длина круга равна 36𝜋."
         android:textAlignment="center"
         android:textSize="@dimen/_25sdp"
         android:textStyle="bold"

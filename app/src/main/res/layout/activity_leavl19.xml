@@ -24,9 +24,9 @@
             android:id="@+id/textView9"
             android:layout_width="@dimen/_250sdp"
             android:layout_height="@dimen/_150sdp"
-            android:text="Вычислите периметр пирамидки, если сторона основания равна 6, а боковая сторона — 7."
+            android:text="Вычислите периметр четырехугольной пирамидки, если сторона основания равна 6, а боковая сторона — 7."
             android:textAlignment="center"
-            android:textSize="@dimen/_24sdp"
+            android:textSize="@dimen/_21sdp"
             android:textStyle="bold"
             />
 

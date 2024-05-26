@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="@dimen/_280sdp"
         android:layout_height="wrap_content"
-        android:text="Площадь поверхности сферы вычисляется по формуле S(сфера) = 4 · π · R · R, где R – радиус сферы ."
+        android:text="Площадь поверхности сферы вычисляется по формуле S(сфера) = 4 · π · r · r, где r – радиус сферы ."
         android:textSize="@dimen/_20sdp"
         android:textAlignment="center"
         android:layout_marginTop="@dimen/_30sdp"
@@ -61,6 +61,16 @@
             android:layout_marginTop="@dimen/_35sdp"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="@string/pi"/>
+
 
             <EditText
                 android:id="@+id/patasxan_inpat"

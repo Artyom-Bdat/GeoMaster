@@ -27,9 +27,9 @@
             android:id="@+id/textView9"
             android:layout_width="@dimen/_255sdp"
             android:layout_height="@dimen/_150sdp"
-            android:text="Вычислите периметр и площадь треугольника, если a = 5,с = 3,b = 9,h = 10."
+            android:text="Вычислите периметр и площадь треугольника, если a = 5,с = 3,b = 9,h = 10 где h праведен к а."
             android:textAlignment="center"
-            android:textSize="@dimen/_25sdp"
+            android:textSize="@dimen/_23sdp"
             android:textStyle="bold"
             />
 
