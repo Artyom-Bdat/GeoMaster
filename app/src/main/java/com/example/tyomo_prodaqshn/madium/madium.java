@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.tyomo_prodaqshn.R;
 import com.example.tyomo_prodaqshn.east_2.easy;
@@ -21,6 +23,8 @@ public class madium extends AppCompatActivity {
         setContentView(R.layout.activity_madium);
     }
 
+
+
     public void RandomLevel(View view) {
         // Создаем объект Random для генерации случайных чисел
         Random random = new Random();
@@ -29,38 +33,55 @@ public class madium extends AppCompatActivity {
 
         // Создаем Intent для запуска соответствующего уровня
         Intent intent;
-        switch (randomLevel) {
-            case 1:
-                intent = new Intent(madium.this, Leval_13.class);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                break;
-            case 2:
-                intent = new Intent(madium.this, Leval_14.class);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                break;
-            case 3:
-                intent = new Intent(madium.this, Leval_15.class);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                break;
-            case 4:
-                intent = new Intent(madium.this, Leval_16.class);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                break;
-            case 5:
-                intent = new Intent(madium.this, Leval_17.class);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                break;
-            case 6:
-                intent = new Intent(madium.this, Leval_18.class);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                break;
-            default:
-                // Handle unexpected case
-                return;
+
+        try {
+
+            switch (randomLevel) {
+                case 1:
+                    intent = new Intent(madium.this, Leval_13.class);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+                    break;
+                case 2:
+                    intent = new Intent(madium.this, Leval_14.class);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+                    break;
+                case 3:
+                    intent = new Intent(madium.this, Leval_15.class);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+                    break;
+                case 4:
+                    intent = new Intent(madium.this, Leval_16.class);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+                    break;
+                case 5:
+                    intent = new Intent(madium.this, Leval_17.class);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+                    break;
+                case 6:
+                    intent = new Intent(madium.this, Leval_18.class);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
+                    break;
+                default:
+                    // Handle unexpected case
+                    return;
+
+
+            }
+
+            startActivity(intent);
+
+        }catch (Exception e){
+            Log.e("ERROR",e.getMessage());
         }
 
         // Запускаем уровень
-        startActivity(intent);
+
     }
 
     public void nazad(View view) {

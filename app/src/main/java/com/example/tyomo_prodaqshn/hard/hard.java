@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.tyomo_prodaqshn.R;
@@ -47,6 +48,10 @@ public class hard extends AppCompatActivity {
 
         // Создаем Intent для запуска соответствующего уровня
         Intent intent;
+
+        try{
+
+
         switch (randomLevel) {
             case 1:
                 intent = new Intent(hard.this, Leavl_19.class);
@@ -79,6 +84,10 @@ public class hard extends AppCompatActivity {
 
         // Запускаем уровень
         startActivity(intent);
+
+        }catch (Exception e){
+            Log.e("ERROR",e.getMessage());
+        }
     }
 
     public void kvibru(View view) {

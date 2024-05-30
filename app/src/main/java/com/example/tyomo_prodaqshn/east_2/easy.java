@@ -2,6 +2,7 @@ package com.example.tyomo_prodaqshn.east_2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,14 +35,21 @@ public class easy extends AppCompatActivity {
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
-    public void RandomLevel(View view) {
+
+
+
+        public void RandomLevel (View view){
         // Создаем объект Random для генерации случайных чисел
         Random random = new Random();
         // Генерируем случайное число от 1 до 6
         int randomLevel = random.nextInt(6) + 1;
 
-        // Создаем Intent для запуска соответствующего уровня
+
+
         Intent intent;
+
+        try{
+
         switch (randomLevel) {
             case 1:
                 intent = new Intent(easy.this, Leval_7.class);
@@ -74,6 +82,11 @@ public class easy extends AppCompatActivity {
 
         // Запускаем уровень
         startActivity(intent);
+
+    }catch(Exception e){
+        Log.e("ERROR", e.getMessage());
+    }
+
     }
 
     public void dale(View view) {

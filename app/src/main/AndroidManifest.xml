@@ -172,6 +172,8 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Tyomo_Prodaqshn.TransparentActionBar"/>
+
+
         <activity
             android:name=".east_2.easy"
             android:exported="false"

@@ -2,6 +2,7 @@ package com.example.tyomo_prodaqshn.easy;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -33,6 +34,11 @@ public class very_easy extends AppCompatActivity {
 
         // Создаем Intent для запуска соответствующего уровня
         Intent intent;
+
+        try{
+
+
+
         switch (randomLevel) {
             case 1:
                 intent = new Intent(very_easy.this, Leval_1.class);
@@ -63,8 +69,14 @@ public class very_easy extends AppCompatActivity {
                 return;
         }
 
-        // Запускаем уровень
-        startActivity(intent);
+            startActivity(intent);
+
+
+        }catch (Exception e){
+            Log.e("ERROR",e.getMessage());
+        }
+
+
     }
 
     @Override
